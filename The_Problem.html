@@ -1,0 +1,519 @@
+<!DOCTYPE HTML>
+<html lang="ja" class="sidebar-visible no-js light">
+    <head>
+        <link rel="preload" as="font" type="../font/woff2" href="fonts/noto-serif-jp-v15-japanese-200.woff2" crossorigin>
+        <link rel="preload" as="font" type="../font/woff2" href="fonts/noto-serif-jp-v15-japanese-300.woff2" crossorigin>
+        <link rel="preload" as="font" type="../font/woff2" href="fonts/noto-serif-jp-v15-japanese-500.woff2" crossorigin>
+        <link rel="preload" as="font" type="../font/woff2" href="fonts/noto-serif-jp-v15-japanese-600.woff2" crossorigin>
+        <link rel="preload" as="font" type="../font/woff2" href="fonts/noto-serif-jp-v15-japanese-700.woff2" crossorigin>
+        <link rel="preload" as="font" type="../font/woff2" href="fonts/noto-serif-jp-v15-japanese-900.woff2" crossorigin>
+        <link rel="preload" as="font" type="../font/woff2" href="fonts/noto-serif-jp-v15-japanese-regular.woff2" crossorigin>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>The Problem - The Hound of the Baskervilles</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+        <link rel="stylesheet" href="fonts/font.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="src/theme/solarized-light-hljs.css">
+        <link rel="stylesheet" href="src/theme/solarized-dark-hljs.css">
+        <!-- MathJax -->
+        <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html">Home</a></li><li class="chapter-item expanded "><a href="Mr_Sherlock_Holmes.html"><strong aria-hidden="true">1.</strong> Mr. Sherlock Holmes</a></li><li class="chapter-item expanded "><a href="The_Curse_of_the_Baskervilles.html"><strong aria-hidden="true">2.</strong> The Curse of the Baskervilles</a></li><li class="chapter-item expanded "><a href="The_Problem.html" class="active"><strong aria-hidden="true">3.</strong> The Problem</a></li><li class="chapter-item expanded "><a href="Sir_Henry_Baskerville.html"><strong aria-hidden="true">4.</strong> Sir Henry Baskerville</a></li><li class="chapter-item expanded "><a href="Three_Broken_Threads.html"><strong aria-hidden="true">5.</strong> Three Broken Threads</a></li><li class="chapter-item expanded "><a href="Baskerville_Hall.html"><strong aria-hidden="true">6.</strong> Baskerville Hall</a></li><li class="chapter-item expanded "><a href="The_Stapletons_of_Merripit_House.html"><strong aria-hidden="true">7.</strong> The Stapletons of Merripit House</a></li><li class="chapter-item expanded "><a href="First_Report_of_Dr_Watson.html"><strong aria-hidden="true">8.</strong> First Report of Dr. Watson</a></li><li class="chapter-item expanded "><a href="The_Light_Upon_The_Moor.html"><strong aria-hidden="true">9.</strong> The Light Upon The Moor</a></li><li class="chapter-item expanded "><a href="Extract_from_the_Diary_of_Dr_Watson.html"><strong aria-hidden="true">10.</strong> Extract from the Diary of Dr. Watson</a></li><li class="chapter-item expanded "><a href="The_Man_on_the_Tor.html"><strong aria-hidden="true">11.</strong> The Man on the Tor</a></li><li class="chapter-item expanded "><a href="Death_on_the_Moor.html"><strong aria-hidden="true">12.</strong> Death on the Moor</a></li><li class="chapter-item expanded "><a href="Fixing_the_Nets.html"><strong aria-hidden="true">13.</strong> Fixing the Nets</a></li><li class="chapter-item expanded "><a href="The_Hound_of_the_Baskervilles.html"><strong aria-hidden="true">14.</strong> The Hound of the Baskervilles</a></li><li class="chapter-item expanded "><a href="A_Retrospection.html"><strong aria-hidden="true">15.</strong> A Retrospection</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="solarized-light">Solarized Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="solarized-dark">Solarized Dark</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">The Hound of the Baskervilles</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/solareenlo/The_Hound_of_the_Baskervilles" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/solareenlo/The_Hound_of_the_Baskervilles/edit/main/src/The_Problem.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="3-the-problem"><a class="header" href="#3-the-problem">3. The Problem</a></h1>
+<p>I confess at these words a shudder passed through me. There was a
+thrill in the doctor's voice which showed that he was himself
+deeply moved by that which he told us. Holmes leaned forward in
+his excitement and his eyes had the hard, dry glitter which shot
+from them when he was keenly interested.</p>
+<p>&quot;You saw this?&quot;</p>
+<p>&quot;As clearly as I see you.&quot;</p>
+<p>&quot;And you said nothing?&quot;</p>
+<p>&quot;What was the use?&quot;</p>
+<p>&quot;How was it that no one else saw it?&quot;</p>
+<p>&quot;The marks were some twenty yards from the body and no one gave
+them a thought. I don't suppose I should have done so had I not
+known this legend.&quot;</p>
+<p>&quot;There are many sheep-dogs on the moor?&quot;</p>
+<p>&quot;No doubt, but this was no sheep-dog.&quot;</p>
+<p>&quot;You say it was large?&quot;</p>
+<p>&quot;Enormous.&quot;</p>
+<p>&quot;But it had not approached the body?&quot;</p>
+<p>&quot;No.&quot;</p>
+<p>&quot;What sort of night was it?'</p>
+<p>&quot;Damp and raw.&quot;</p>
+<p>&quot;But not actually raining?&quot;</p>
+<p>&quot;No.&quot;</p>
+<p>&quot;What is the Alley like?&quot;</p>
+<p>&quot;There are two lines of old yew hedge, twelve feet high and
+impenetrable. The walk in the centre is about eight feet across.&quot;</p>
+<p>&quot;Is there anything between the hedges and the walk?&quot;</p>
+<p>&quot;Yes, there is a strip of grass about six feet broad on either
+side.&quot;</p>
+<p>&quot;I understand that the yew hedge is penetrated at one point by a
+gate?&quot;</p>
+<p>&quot;Yes, the wicket-gate which leads on to the moor.&quot;</p>
+<p>&quot;Is there any other opening?&quot;</p>
+<p>&quot;None.&quot;</p>
+<p>&quot;So that to reach the Yew Alley one either has to come down it
+from the house or else to enter it by the moor-gate?&quot;</p>
+<p>&quot;There is an exit through a summer-house at the far end.&quot;</p>
+<p>&quot;Had Sir Charles reached this?&quot;</p>
+<p>&quot;No; he lay about fifty yards from it.&quot;</p>
+<p>&quot;Now, tell me, Dr. Mortimer--and this is important--the
+marks which you saw were on the path and not on the grass?&quot;</p>
+<p>&quot;No marks could show on the grass.&quot;</p>
+<p>&quot;Were they on the same side of the path as the moor-gate?&quot;</p>
+<p>&quot;Yes; they were on the edge of the path on the same side as the
+moor-gate.&quot;</p>
+<p>&quot;You interest me exceedingly. Another point. Was the wicket-gate
+closed?&quot;</p>
+<p>&quot;Closed and padlocked.&quot;</p>
+<p>&quot;How high was it?&quot;</p>
+<p>&quot;About four feet high.&quot;</p>
+<p>&quot;Then anyone could have got over it?&quot;</p>
+<p>&quot;Yes.&quot;</p>
+<p>&quot;And what marks did you see by the wicket-gate?&quot;</p>
+<p>&quot;None in particular.&quot;</p>
+<p>&quot;Good heaven! Did no one examine?&quot;</p>
+<p>&quot;Yes, I examined myself.&quot;</p>
+<p>&quot;And found nothing?&quot;</p>
+<p>&quot;It was all very confused. Sir Charles had evidently stood there
+for five or ten minutes.&quot;</p>
+<p>&quot;How do you know that?&quot;</p>
+<p>&quot;Because the ash had twice dropped from his cigar.&quot;</p>
+<p>&quot;Excellent! This is a colleague, Watson, after our own heart. But
+the marks?&quot;</p>
+<p>&quot;He had left his own marks all over that small patch of gravel. I
+could discern no others.&quot;</p>
+<p>Sherlock Holmes struck his hand against his knee with an
+impatient gesture.</p>
+<p>&quot;If I had only been there!&quot; he cried. &quot;It is evidently a case of
+extraordinary interest, and one which presented immense
+opportunities to the scientific expert. That gravel page upon
+which I might have read so much has been long ere this smudged by
+the rain and defaced by the clogs of curious peasants. Oh, Dr.
+Mortimer, Dr. Mortimer, to think that you should not have called
+me in! You have indeed much to answer for.&quot;</p>
+<p>&quot;I could not call you in, Mr. Holmes, without disclosing these
+facts to the world, and I have already given my reasons for not
+wishing to do so. Besides, besides --&quot;</p>
+<p>&quot;Why do you hesitate?&quot;</p>
+<p>&quot;There is a realm in which the most acute and most experienced of
+detectives is helpless.&quot;</p>
+<p>&quot;You mean that the thing is supernatural?&quot;</p>
+<p>&quot;I did not positively say so.&quot;</p>
+<p>&quot;No, but you evidently think it.&quot;</p>
+<p>&quot;Since the tragedy, Mr. Holmes, there have come to my ears
+several incidents which are hard to reconcile with the settled
+order of Nature.&quot;</p>
+<p>&quot;For example?&quot;</p>
+<p>&quot;I find that before the terrible event occurred several people
+had seen a creature upon the moor which corresponds with this
+Baskerville demon, and which could not possibly be any animal
+known to science. They all agreed that it was a huge creature,
+luminous, ghastly, and spectral. I have cross-examined these men,
+one of them a hard-headed countryman, one a farrier, and one a
+moorland farmer, who all tell the same story of this dreadful
+apparition, exactly corresponding to the hell-hound of the
+legend. I assure you that there is a reign of terror in the
+district, and that it is a hardy man who will cross the moor at
+night.&quot;</p>
+<p>&quot;And you, a trained man of science, believe it to be
+supernatural?&quot;</p>
+<p>&quot;I do not know what to believe.&quot;</p>
+<p>Holmes shrugged his shoulders.</p>
+<p>&quot;I have hitherto confined my investigations to this world,&quot; said
+he. &quot;In a modest way I have combated evil, but to take on the
+Father of Evil himself would, perhaps, be too ambitious a task.
+Yet you must admit that the footmark is material.&quot;</p>
+<p>&quot;The original hound was material enough to tug a man's throat
+out, and yet he was diabolical as well.&quot;</p>
+<p>&quot;I see that you have quite gone over to the supernaturalists. But
+now, Dr. Mortimer, tell me this. If you hold these views, why
+have you come to consult me at all? You tell me in the same
+breath that it is useless to investigate Sir Charles's death, and
+that you desire me to do it.&quot;</p>
+<p>&quot;I did not say that I desired you to do it.&quot;</p>
+<p>&quot;Then, how can I assist you?&quot;</p>
+<p>&quot;By advising me as to what I should do with Sir Henry
+Baskerville, who arrives at Waterloo Station&quot;--Dr. Mortimer
+looked at his watch--&quot;in exactly one hour and a quarter.&quot;</p>
+<p>&quot;He being the heir?&quot;</p>
+<p>&quot;Yes. On the death of Sir Charles we inquired for this young
+gentleman and found that he had been farming in Canada. From the
+accounts which have reached us he is an excellent fellow in every
+way. I speak not as a medical man but as a trustee and executor
+of Sir Charles's will.&quot;</p>
+<p>&quot;There is no other claimant, I presume?&quot;</p>
+<p>&quot;None. The only other kinsman whom we have been able to trace was
+Rodger Baskerville, the youngest of three brothers of whom poor
+Sir Charles was the elder. The second brother, who died young, is
+the father of this lad Henry. The third, Rodger, was the black
+sheep of the family. He came of the old masterful Baskerville
+strain, and was the very image, they tell me, of the family
+picture of old Hugo. He made England too hot to hold him, fled to
+Central America, and died there in 1876 of yellow fever. Henry is
+the last of the Baskervilles. In one hour and five minutes I meet
+him at Waterloo Station. I have had a wire that he arrived at
+Southampton this morning. Now, Mr. Holmes, what would you advise
+me to do with him?&quot;</p>
+<p>&quot;Why should he not go to the home of his fathers?&quot;</p>
+<p>&quot;It seems natural, does it not? And yet, consider that every
+Baskerville who goes there meets with an evil fate. I feel sure
+that if Sir Charles could have spoken with me before his death he
+would have warned me against bringing this, the last of the old
+race, and the heir to great wealth, to that deadly place. And yet
+it cannot be denied that the prosperity of the whole poor, bleak
+country-side depends upon his presence. All the good work which
+has been done by Sir Charles will crash to the ground if there is
+no tenant of the Hall. I fear lest I should be swayed too much by
+my own obvious interest in the matter, and that is why I bring
+the case before you and ask for your advice.&quot;</p>
+<p>Holmes considered for a little time.</p>
+<p>&quot;Put into plain words, the matter is this,&quot; said he. &quot;In your
+opinion there is a diabolical agency which makes Dartmoor an
+unsafe abode for a Baskerville--that is your opinion?&quot;</p>
+<p>&quot;At least I might go the length of saying that there is some
+evidence that this may be so.&quot;</p>
+<p>&quot;Exactly. But surely, if your supernatural theory be correct, it
+could work the young man evil in London as easily as in
+Devonshire. A devil with merely local powers like a parish
+vestry would be too inconceivable a thing.&quot;</p>
+<p>&quot;You put the matter more flippantly, Mr. Holmes, than you would
+probably do if you were brought into personal contact with these
+things. Your advice, then, as I understand it, is that the young
+man will be as safe in Devonshire as in London. He comes in fifty
+minutes. What would you recommend?&quot;</p>
+<p>&quot;I recommend, sir, that you take a cab, call off your spaniel who
+is scratching at my front door, and proceed to Waterloo to meet
+Sir Henry Baskerville.&quot;</p>
+<p>&quot;And then?&quot;</p>
+<p>&quot;And then you will say nothing to him at all until I have made up
+my mind about the matter.&quot;</p>
+<p>&quot;How long will it take you to make up your mind?&quot;</p>
+<p>&quot;Twenty-four hours. At ten o'clock to-morrow, Dr. Mortimer, I
+will be much obliged to you if you will call upon me here, and it
+will be of help to me in my plans for the future if you will
+bring Sir Henry Baskerville with you.&quot;</p>
+<p>&quot;I will do so, Mr. Holmes.&quot; He scribbled the appointment on his
+shirtcuff and hurried off in his strange, peering, absent-minded
+fashion. Holmes stopped him at the head of the stair.</p>
+<p>&quot;Only one more question, Dr. Mortimer. You say that before Sir
+Charles Baskerville's death several people saw this apparition
+upon the moor?&quot;</p>
+<p>&quot;Three people did.&quot;</p>
+<p>&quot;Did any see it after?&quot;</p>
+<p>&quot;I have not heard of any.&quot;</p>
+<p>&quot;Thank you. Good morning.&quot;</p>
+<p>Holmes returned to his seat with that quiet look of inward
+satisfaction which meant that he had a congenial task before him.</p>
+<p>&quot;Going out, Watson?&quot;</p>
+<p>&quot;Unless I can help you.&quot;</p>
+<p>&quot;No, my dear fellow, it is at the hour of action that I turn to
+you for aid. But this is splendid, really unique from some points
+of view. When you pass Bradley's, would you ask him to send up a
+pound of the strongest shag tobacco? Thank you. It would be as
+well if you could make it convenient not to return before
+evening. Then I should be very glad to compare impressions as to
+this most interesting problem which has been submitted to us this
+morning.&quot;</p>
+<p>I knew that seclusion and solitude were very necessary for my
+friend in those hours of intense mental concentration during
+which he weighed every particle of evidence, constructed
+alternative theories, balanced one against the other, and made up
+his mind as to which points were essential and which immaterial.
+I therefore spent the day at my club and did not return to Baker
+Street until evening. It was nearly nine o'clock when I found
+myself in the sitting-room once more.</p>
+<p>My first impression as I opened the door was that a fire had
+broken out, for the room was so filled with smoke that the light
+of the lamp upon the table was blurred by it. As I entered,
+however, my fears were set at rest, for it was the acrid fumes of
+strong coarse tobacco which took me by the throat and set me
+coughing. Through the haze I had a vague vision of Holmes in his
+dressing-gown coiled up in an armchair with his black clay pipe
+between his lips. Several rolls of paper lay around him.</p>
+<p>&quot;Caught cold, Watson?&quot; said he.</p>
+<p>&quot;No, it's this poisonous atmosphere.&quot;</p>
+<p>&quot;I suppose it is pretty thick, now that you mention it.&quot;</p>
+<p>&quot;Thick! It is intolerable.&quot;</p>
+<p>&quot;Open the window, then! You have been at your club all day, I
+perceive.&quot;</p>
+<p>&quot;My dear Holmes!&quot;</p>
+<p>&quot;Am I right?&quot;</p>
+<p>&quot;Certainly, but how?&quot;</p>
+<p>He laughed at my bewildered expression.</p>
+<p>&quot;There is a delightful freshness about you, Watson, which makes
+it a pleasure to exercise any small powers which I possess at
+your expense. A gentleman goes forth on a showery and miry day.
+He returns immaculate in the evening with the gloss still on his
+hat and his boots. He has been a fixture therefore all day. He is
+not a man with intimate friends. Where, then, could he have been?
+Is it not obvious?&quot;</p>
+<p>&quot;Well, it is rather obvious.&quot;</p>
+<p>&quot;The world is full of obvious things which nobody by any chance
+ever observes. Where do you think that I have been?&quot;</p>
+<p>&quot;A fixture also.&quot;</p>
+<p>&quot;On the contrary, I have been to Devonshire.&quot;</p>
+<p>&quot;In spirit?&quot;</p>
+<p>&quot;Exactly. My body has remained in this arm-chair and has, I
+regret to observe, consumed in my absence two large pots of
+coffee and an incredible amount of tobacco. After you left I sent
+down to Stamford's for the Ordnance map of this portion of the
+moor, and my spirit has hovered over it all day. I flatter myself
+that I could find my way about.&quot;</p>
+<p>&quot;A large scale map, I presume?&quot;</p>
+<p>&quot;Very large.&quot; He unrolled one section and held it over his knee.
+&quot;Here you have the particular district which concerns us. That is
+Baskerville Hall in the middle.&quot;</p>
+<p>&quot;With a wood round it?&quot;</p>
+<p>&quot;Exactly. I fancy the Yew Alley, though not marked under that
+name, must stretch along this line, with the moor, as you
+perceive, upon the right of it. This small clump of buildings
+here is the hamlet of Grimpen, where our friend Dr. Mortimer has
+his headquarters. Within a radius of five miles there are, as you
+see, only a very few scattered dwellings. Here is Lafter Hall,
+which was mentioned in the narrative. There is a house indicated
+here which may be the residence of the naturalist--Stapleton, if
+I remember right, was his name. Here are two moorland
+farm-houses, High Tor and Foulmire. Then fourteen miles away the
+great convict prison of Princetown. Between and around these
+scattered points extends the desolate, lifeless moor. This, then,
+is the stage upon which tragedy has been played, and upon which
+we may help to play it again.&quot;</p>
+<p>&quot;It must be a wild place.&quot;</p>
+<p>&quot;Yes, the setting is a worthy one. If the devil did desire to
+have a hand in the affairs of men ----&quot;</p>
+<p>&quot;Then you are yourself inclining to the supernatural
+explanation.&quot;</p>
+<p>&quot;The devil's agents may be of flesh and blood, may they not?
+There are two questions waiting for us at the outset. The one is
+whether any crime has been committed at all; the second is, what
+is the crime and how was it committed? Of course, if Dr.
+Mortimer's surmise should be correct, and we are dealing with
+forces outside the ordinary laws of Nature, there is an end of
+our investigation. But we are bound to exhaust all other
+hypotheses before falling back upon this one. I think we'll shut
+that window again, if you don't mind. It is a singular thing, but
+I find that a concentrated atmosphere helps a concentration of
+thought. I have not pushed it to the length of getting into a box
+to think, but that is the logical outcome of my convictions. Have
+you turned the case over in your mind?&quot;</p>
+<p>&quot;Yes, I have thought a good deal of it in the course of the day.&quot;</p>
+<p>&quot;What do you make of it?&quot;</p>
+<p>&quot;It is very bewildering.&quot;</p>
+<p>&quot;It has certainly a character of its own. There are points of
+distinction about it. That change in the footprints, for example.
+What do you make of that?&quot;</p>
+<p>&quot;Mortimer said that the man had walked on tiptoe down that
+portion of the alley.&quot;</p>
+<p>&quot;He only repeated what some fool had said at the inquest. Why
+should a man walk on tiptoe down the alley?&quot;</p>
+<p>&quot;What then?&quot;</p>
+<p>&quot;He was running, Watson--running desperately, running for his
+life, running until he burst his heart and fell dead upon his
+face.&quot;</p>
+<p>&quot;Running from what?&quot;</p>
+<p>&quot;There lies our problem. There are indications that the man was
+crazed with fear before ever he began to run.&quot;</p>
+<p>&quot;How can you say that?&quot;</p>
+<p>&quot;I am presuming that the cause of his fears came to him across
+the moor. If that were so, and it seems most probable, only a man
+who had lost his wits would have run from the house instead of
+towards it. If the gipsy's evidence may be taken as true, he ran
+with cries for help in the direction where help was least likely
+to be. Then, again, whom was he waiting for that night, and why
+was he waiting for him in the Yew Alley rather than in his own
+house?&quot;</p>
+<p>&quot;You think that he was waiting for someone?&quot;</p>
+<p>&quot;The man was elderly and infirm. We can understand his taking an
+evening stroll, but the ground was damp and the night inclement.
+Is it natural that he should stand for five or ten minutes, as
+Dr. Mortimer, with more practical sense than I should have given
+him credit for, deduced from the cigar ash?&quot;</p>
+<p>&quot;But he went out every evening.&quot;</p>
+<p>&quot;I think it unlikely that he waited at the moor-gate every
+evening. On the contrary, the evidence is that he avoided the
+moor. That night he waited there. It was the night before he made
+his departure for London. The thing takes shape, Watson. It
+becomes coherent. Might I ask you to hand me my violin, and we
+will postpone all further thought upon this business until we
+have had the advantage of meeting Dr. Mortimer and Sir Henry
+Baskerville in the morning.&quot;</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="The_Curse_of_the_Baskervilles.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="Sir_Henry_Baskerville.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="The_Curse_of_the_Baskervilles.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="Sir_Henry_Baskerville.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        <script type="text/javascript" src="src/theme/theme-solarized_dark.js"></script>
+        <script type="text/javascript" src="src/theme/theme-solarized_light.js"></script>
+    </body>
+</html>

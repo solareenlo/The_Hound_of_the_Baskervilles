@@ -1,0 +1,677 @@
+<!DOCTYPE HTML>
+<html lang="ja" class="sidebar-visible no-js light">
+    <head>
+        <link rel="preload" as="font" type="../font/woff2" href="fonts/noto-serif-jp-v15-japanese-200.woff2" crossorigin>
+        <link rel="preload" as="font" type="../font/woff2" href="fonts/noto-serif-jp-v15-japanese-300.woff2" crossorigin>
+        <link rel="preload" as="font" type="../font/woff2" href="fonts/noto-serif-jp-v15-japanese-500.woff2" crossorigin>
+        <link rel="preload" as="font" type="../font/woff2" href="fonts/noto-serif-jp-v15-japanese-600.woff2" crossorigin>
+        <link rel="preload" as="font" type="../font/woff2" href="fonts/noto-serif-jp-v15-japanese-700.woff2" crossorigin>
+        <link rel="preload" as="font" type="../font/woff2" href="fonts/noto-serif-jp-v15-japanese-900.woff2" crossorigin>
+        <link rel="preload" as="font" type="../font/woff2" href="fonts/noto-serif-jp-v15-japanese-regular.woff2" crossorigin>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>The Stapletons of Merripit House - The Hound of the Baskervilles</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+        <link rel="stylesheet" href="fonts/font.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="src/theme/solarized-light-hljs.css">
+        <link rel="stylesheet" href="src/theme/solarized-dark-hljs.css">
+        <!-- MathJax -->
+        <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html">Home</a></li><li class="chapter-item expanded "><a href="Mr_Sherlock_Holmes.html"><strong aria-hidden="true">1.</strong> Mr. Sherlock Holmes</a></li><li class="chapter-item expanded "><a href="The_Curse_of_the_Baskervilles.html"><strong aria-hidden="true">2.</strong> The Curse of the Baskervilles</a></li><li class="chapter-item expanded "><a href="The_Problem.html"><strong aria-hidden="true">3.</strong> The Problem</a></li><li class="chapter-item expanded "><a href="Sir_Henry_Baskerville.html"><strong aria-hidden="true">4.</strong> Sir Henry Baskerville</a></li><li class="chapter-item expanded "><a href="Three_Broken_Threads.html"><strong aria-hidden="true">5.</strong> Three Broken Threads</a></li><li class="chapter-item expanded "><a href="Baskerville_Hall.html"><strong aria-hidden="true">6.</strong> Baskerville Hall</a></li><li class="chapter-item expanded "><a href="The_Stapletons_of_Merripit_House.html" class="active"><strong aria-hidden="true">7.</strong> The Stapletons of Merripit House</a></li><li class="chapter-item expanded "><a href="First_Report_of_Dr_Watson.html"><strong aria-hidden="true">8.</strong> First Report of Dr. Watson</a></li><li class="chapter-item expanded "><a href="The_Light_Upon_The_Moor.html"><strong aria-hidden="true">9.</strong> The Light Upon The Moor</a></li><li class="chapter-item expanded "><a href="Extract_from_the_Diary_of_Dr_Watson.html"><strong aria-hidden="true">10.</strong> Extract from the Diary of Dr. Watson</a></li><li class="chapter-item expanded "><a href="The_Man_on_the_Tor.html"><strong aria-hidden="true">11.</strong> The Man on the Tor</a></li><li class="chapter-item expanded "><a href="Death_on_the_Moor.html"><strong aria-hidden="true">12.</strong> Death on the Moor</a></li><li class="chapter-item expanded "><a href="Fixing_the_Nets.html"><strong aria-hidden="true">13.</strong> Fixing the Nets</a></li><li class="chapter-item expanded "><a href="The_Hound_of_the_Baskervilles.html"><strong aria-hidden="true">14.</strong> The Hound of the Baskervilles</a></li><li class="chapter-item expanded "><a href="A_Retrospection.html"><strong aria-hidden="true">15.</strong> A Retrospection</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="solarized-light">Solarized Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="solarized-dark">Solarized Dark</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">The Hound of the Baskervilles</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/solareenlo/The_Hound_of_the_Baskervilles" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/solareenlo/The_Hound_of_the_Baskervilles/edit/main/src/The_Stapletons_of_Merripit_House.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="7-the-stapletons-of-merripit-house"><a class="header" href="#7-the-stapletons-of-merripit-house">7. The Stapletons of Merripit House</a></h1>
+<p>The fresh beauty of the following morning did something to efface
+from our minds the grim and gray impression which had been left
+upon both of us by our first experience of Baskerville Hall. As
+Sir Henry and I sat at breakfast the sunlight flooded in through
+the high mullioned windows, throwing watery patches of colour
+from the coats of arms which covered them. The dark panelling
+glowed like bronze in the golden rays, and it was hard to realize
+that this was indeed the chamber which had struck such a gloom
+into our souls upon the evening before.</p>
+<p>&quot;I guess it is ourselves and not the house that we have to
+blame!&quot; said the baronet. &quot;We were tired with our journey and
+chilled by our drive, so we took a gray view of the place. Now we
+are fresh and well, so it is all cheerful once more.&quot;</p>
+<p>&quot;And yet it was not entirely a question of imagination,&quot; I
+answered. &quot;Did you, for example, happen to hear someone, a woman
+I think, sobbing in the night?&quot;</p>
+<p>&quot;That is curious, for I did when I was half asleep fancy that I
+heard something of the sort. I waited quite a time, but there was
+no more of it, so I concluded that it was all a dream.&quot;</p>
+<p>&quot;I heard it distinctly, and I am sure that it was really the sob
+of a woman.&quot;</p>
+<p>&quot;We must ask about this right away.&quot; He rang the bell and asked
+Barrymore whether he could account for our experience. It seemed
+to me that the pallid features of the butler turned a shade paler
+still as he listened to his master's question.</p>
+<p>&quot;There are only two women in the house, Sir Henry,&quot; he answered.
+&quot;One is the scullery-maid, who sleeps in the other wing. The
+other is my wife, and I can answer for it that the sound could
+not have come from her.&quot;</p>
+<p>And yet he lied as he said it, for it chanced that after
+breakfast I met Mrs. Barrymore in the long corridor with the sun
+full upon her face. She was a large, impassive, heavy-featured
+woman with a stern set expression of mouth. But her tell-tale
+eyes were red and glanced at me from between swollen lids. It was
+she, then, who wept in the night, and if she did so her husband
+must know it. Yet he had taken the obvious risk of discovery in
+declaring that it was not so. Why had he done this? And why did
+she weep so bitterly? Already round this pale-faced, handsome,
+black-bearded man there was gathering an atmosphere of mystery
+and of gloom. It was he who had been the first to discover the
+body of Sir Charles, and we had only his word for all the
+circumstances which led up to the old man's death. Was it
+possible that it was Barrymore after all whom we had seen in the
+cab in Regent Street? The beard might well have been the same.
+The cabman had described a somewhat shorter man, but such an
+impression might easily have been erroneous. How could I settle
+the point forever? Obviously the first thing to do was to see the
+Grimpen postmaster, and find whether the test telegram had really
+been placed in Barrymore's own hands. Be the answer what it
+might, I should at least have something to report to Sherlock
+Holmes.</p>
+<p>Sir Henry had numerous papers to examine after breakfast, so that
+the time was propitious for my excursion. It was a pleasant walk
+of four miles along the edge of the moor, leading me at last to a
+small gray hamlet, in which two larger buildings, which proved to
+be the inn and the house of Dr. Mortimer, stood high above the
+rest. The postmaster, who was also the village grocer, had a
+clear recollection of the telegram.</p>
+<p>&quot;Certainly, sir,&quot; said he, &quot;I had the telegram delivered to Mr.
+Barrymore exactly as directed.&quot;</p>
+<p>&quot;Who delivered it?&quot;</p>
+<p>&quot;My boy here. James, you delivered that telegram to Mr. Barrymore
+at the Hall last week, did you not?&quot;</p>
+<p>&quot;Yes, father, I delivered it.&quot;</p>
+<p>&quot;Into his own hands?&quot; I asked.</p>
+<p>&quot;Well, he was up in the loft at the time, so that I could not put
+it into his own hands, but I gave it into Mrs. Barrymore's hands,
+and she promised to deliver it at once.&quot;</p>
+<p>&quot;Did you see Mr. Barrymore?&quot;</p>
+<p>&quot;No, sir; I tell you he was in the loft.&quot;</p>
+<p>&quot;If you didn't see him, how do you know he was in the loft?&quot;</p>
+<p>&quot;Well, surely his own wife ought to know where he is,&quot; said the
+postmaster testily. &quot;Didn't he get the telegram? If there is any
+mistake it is for Mr. Barrymore himself to complain.&quot;</p>
+<p>It seemed hopeless to pursue the inquiry any farther, but it was
+clear that in spite of Holmes's ruse we had no proof that
+Barrymore had not been in London all the time. Suppose that it
+were so--suppose that the same man had been the last who had seen
+Sir Charles alive, and the first to dog the new heir when he
+returned to England. What then? Was he the agent of others or had
+he some sinister design of his own? What interest could he have
+in persecuting the Baskerville family? I thought of the strange
+warning clipped out of the leading article of the Times. Was that
+his work or was it possibly the doing of someone who was bent
+upon counteracting his schemes? The only conceivable motive was
+that which had been suggested by Sir Henry, that if the family
+could be scared away a comfortable and permanent home would be
+secured for the Barrymores. But surely such an explanation as
+that would be quite inadequate to account for the deep and subtle
+scheming which seemed to be weaving an invisible net round the
+young baronet. Holmes himself had said that no more complex case
+had come to him in all the long series of his sensational
+investigations. I prayed, as I walked back along the gray, lonely
+road, that my friend might soon be freed from his preoccupations
+and able to come down to take this heavy burden of responsibility
+from my shoulders.</p>
+<p>Suddenly my thoughts were interrupted by the sound of running
+feet behind me and by a voice which called me by name. I turned,
+expecting to see Dr. Mortimer, but to my surprise it was a
+stranger who was pursuing me. He was a small, slim, clean-shaven,
+prim-faced man, flaxen-haired and lean-jawed, between thirty and
+forty years of age, dressed in a gray suit and wearing a straw
+hat. A tin box for botanical specimens hung over his shoulder and
+he carried a green butterfly-net in one of his hands.</p>
+<p>&quot;You will, I am sure, excuse my presumption, Dr. Watson,&quot; said
+he, as he came panting up to where I stood. &quot;Here on the moor we
+are homely folk and do not wait for formal introductions. You may
+possibly have heard my name from our mutual friend, Mortimer. I
+am Stapleton, of Merripit House.&quot;</p>
+<p>&quot;Your net and box would have told me as much,&quot; said I, &quot;for I
+knew that Mr. Stapleton was a naturalist. But how did you know
+me?&quot;</p>
+<p>&quot;I have been calling on Mortimer, and he pointed you out to me
+from the window of his surgery as you passed. As our road lay the
+same way I thought that I would overtake you and introduce
+myself. I trust that Sir Henry is none the worse for his
+journey?&quot;</p>
+<p>&quot;He is very well, thank you.&quot;</p>
+<p>&quot;We were all rather afraid that after the sad death of Sir
+Charles the new baronet might refuse to live here. It is asking
+much of a wealthy man to come down and bury himself in a place of
+this kind, but I need not tell you that it means a very great
+deal to the country-side. Sir Henry has, I suppose, no
+superstitious fears in the matter?&quot;</p>
+<p>&quot;I do not think that it is likely.&quot;</p>
+<p>&quot;Of course you know the legend of the fiend dog which haunts the
+family?&quot;</p>
+<p>&quot;I have heard it.&quot;</p>
+<p>&quot;It is extraordinary how credulous the peasants are about here!
+Any number of them are ready to swear that they have seen such a
+creature upon the moor.&quot; He spoke with a smile, but I seemed to
+read in his eyes that he took the matter more seriously. &quot;The
+story took a great hold upon the imagination of Sir Charles, and
+I have no doubt that it led to his tragic end.&quot;</p>
+<p>&quot;But how?&quot;</p>
+<p>&quot;His nerves were so worked up that the appearance of any dog
+might have had a fatal effect upon his diseased heart. I fancy
+that he really did see something of the kind upon that last night
+in the Yew Alley. I feared that some disaster might occur, for I
+was very fond of the old man, and I knew that his heart was
+weak.&quot;</p>
+<p>&quot;How did you know that?&quot;</p>
+<p>&quot;My friend Mortimer told me.&quot;</p>
+<p>&quot;You think, then, that some dog pursued Sir Charles, and that he
+died of fright in consequence?&quot;</p>
+<p>&quot;Have you any better explanation?&quot;</p>
+<p>&quot;I have not come to any conclusion.&quot;</p>
+<p>&quot;Has Mr. Sherlock Holmes?&quot;</p>
+<p>The words took away my breath for an instant, but a glance at the
+placid face and steadfast eyes of my companion showed that no
+surprise was intended.</p>
+<p>&quot;It is useless for us to pretend that we do not know you, Dr.
+Watson,&quot; said he. &quot;The records of your detective have reached us
+here, and you could not celebrate him without being known
+yourself. When Mortimer told me your name he could not deny your
+identity. If you are here, then it follows that Mr. Sherlock
+Holmes is interesting himself in the matter, and I am naturally
+curious to know what view he may take.&quot;</p>
+<p>&quot;I am afraid that I cannot answer that question.&quot;</p>
+<p>&quot;May I ask if he is going to honour us with a visit himself?&quot;</p>
+<p>&quot;He cannot leave town at present. He has other cases which engage
+his attention.&quot;</p>
+<p>&quot;What a pity! He might throw some light on that which is so dark
+to us. But as to your own researches, if there is any possible
+way in which I can be of service to you I trust that you will
+command me. If I had any indication of the nature of your
+suspicions or how you propose to investigate the case, I might
+perhaps even now give you some aid or advice.&quot;</p>
+<p>&quot;I assure you that I am simply here upon a visit to my friend,
+Sir Henry, and that I need no help of any kind.&quot;</p>
+<p>&quot;Excellent!&quot; said Stapleton. &quot;You are perfectly right to be wary
+and discreet. I am justly reproved for what I feel was an
+unjustifiable intrusion, and I promise you that I will not
+mention the matter again.&quot;</p>
+<p>We had come to a point where a narrow grassy path struck off from
+the road and wound away across the moor. A steep,
+boulder-sprinkled hill lay upon the right which had in bygone
+days been cut into a granite quarry. The face which was turned
+towards us formed a dark cliff, with ferns and brambles growing
+in its niches. From over a distant rise there floated a gray
+plume of smoke.</p>
+<p>&quot;A moderate walk along this moor-path brings us to Merripit
+House,&quot; said he. &quot;Perhaps you will spare an hour that I may have
+the pleasure of introducing you to my sister.&quot;</p>
+<p>My first thought was that I should be by Sir Henry's side. But
+then I remembered the pile of papers and bills with which his
+study table was littered. It was certain that I could not help
+with those. And Holmes had expressly said that I should study the
+neighbours upon the moor. I accepted Stapleton's invitation, and
+we turned together down the path.</p>
+<p>&quot;It is a wonderful place, the moor,&quot; said he, looking round over
+the undulating downs, long green rollers, with crests of jagged
+granite foaming up into fantastic surges. &quot;You never tire of the
+moor. You cannot think the wonderful secrets which it contains.
+It is so vast, and so barren, and so mysterious.&quot;</p>
+<p>&quot;You know it well, then?&quot;</p>
+<p>&quot;I have only been here two years. The residents would call me a
+newcomer. We came shortly after Sir Charles settled. But my
+tastes led me to explore every part of the country round, and I
+should think that there are few men who know it better than I
+do.&quot;</p>
+<p>&quot;Is it hard to know?&quot;</p>
+<p>&quot;Very hard. You see, for example, this great plain to the north
+here with the queer hills breaking out of it. Do you observe
+anything remarkable about that?&quot;</p>
+<p>&quot;It would be a rare place for a gallop.&quot;</p>
+<p>&quot;You would naturally think so and the thought has cost several
+their lives before now. You notice those bright green spots
+scattered thickly over it?&quot;</p>
+<p>&quot;Yes, they seem more fertile than the rest.&quot;</p>
+<p>Stapleton laughed.</p>
+<p>&quot;That is the great Grimpen Mire,&quot; said he. &quot;A false step yonder
+means death to man or beast. Only yesterday I saw one of the moor
+ponies wander into it. He never came out. I saw his head for
+quite a long time craning out of the bog-hole, but it sucked him
+down at last. Even in dry seasons it is a danger to cross it, but
+after these autumn rains it is an awful place. And yet I can find
+my way to the very heart of it and return alive. By George, there
+is another of those miserable ponies!&quot;</p>
+<p>Something brown was rolling and tossing among the green sedges.
+Then a long, agonized, writhing neck shot upward and a dreadful
+cry echoed over the moor. It turned me cold with horror, but my
+companion's nerves seemed to be stronger than mine.</p>
+<p>&quot;It's gone!&quot; said he. &quot;The mire has him. Two in two days, and
+many more, perhaps, for they get in the way of going there in the
+dry weather, and never know the difference until the mire has
+them in its clutches. It's a bad place, the great Grimpen Mire.&quot;</p>
+<p>&quot;And you say you can penetrate it?&quot;</p>
+<p>&quot;Yes, there are one or two paths which a very active man can
+take. I have found them out.&quot;</p>
+<p>&quot;But why should you wish to go into so horrible a place?&quot;</p>
+<p>&quot;Well, you see the hills beyond? They are really islands cut off
+on all sides by the impassable mire, which has crawled round them
+in the course of years. That is where the rare plants and the
+butterflies are, if you have the wit to reach them.&quot;</p>
+<p>&quot;I shall try my luck some day.&quot;</p>
+<p>He looked at me with a surprised face.</p>
+<p>&quot;For God's sake put such an idea out of your mind,&quot; said he.
+&quot;Your blood would be upon my head. I assure you that there would
+not be the least chance of your coming back alive. It is only by
+remembering certain complex landmarks that I am able to do it.&quot;</p>
+<p>&quot;Halloa!&quot; I cried. &quot;What is that?&quot;</p>
+<p>A long, low moan, indescribably sad, swept over the moor. It
+filled the whole air, and yet it was impossible to say whence it
+came. From a dull murmur it swelled into a deep roar, and then
+sank back into a melancholy, throbbing murmur once again.
+Stapleton looked at me with a curious expression in his face.</p>
+<p>&quot;Queer place, the moor!&quot; said he.</p>
+<p>&quot;But what is it?&quot;</p>
+<p>&quot;The peasants say it is the Hound of the Baskervilles calling for
+its prey. I've heard it once or twice before, but never quite so
+loud.&quot;</p>
+<p>I looked round, with a chill of fear in my heart, at the huge
+swelling plain, mottled with the green patches of rushes. Nothing
+stirred over the vast expanse save a pair of ravens, which
+croaked loudly from a tor behind us.</p>
+<p>&quot;You are an educated man. You don't believe such nonsense as
+that?&quot; said I. &quot;What do you think is the cause of so strange a
+sound?&quot;</p>
+<p>&quot;Bogs make queer noises sometimes. It's the mud settling, or the
+water rising, or something.&quot;</p>
+<p>&quot;No, no, that was a living voice.&quot;</p>
+<p>&quot;Well, perhaps it was. Did you ever hear a bittern booming?&quot;</p>
+<p>&quot;No, I never did.&quot;</p>
+<p>&quot;It's a very rare bird--practically extinct--in England now, but
+all things are possible upon the moor. Yes, I should not be
+surprised to learn that what we have heard is the cry of the last
+of the bitterns.&quot;</p>
+<p>&quot;It's the weirdest, strangest thing that ever I heard in my
+life.&quot;</p>
+<p>&quot;Yes, it's rather an uncanny place altogether. Look at the hill-
+side yonder. What do you make of those?&quot;</p>
+<p>The whole steep slope was covered with gray circular rings of
+stone, a score of them at least.</p>
+<p>&quot;What are they? Sheep-pens?&quot;</p>
+<p>&quot;No, they are the homes of our worthy ancestors. Prehistoric man
+lived thickly on the moor, and as no one in particular has lived
+there since, we find all his little arrangements exactly as he
+left them. These are his wigwams with the roofs off. You can even
+see his hearth and his couch if you have the curiosity to go
+inside.</p>
+<p>&quot;But it is quite a town. When was it inhabited?&quot;</p>
+<p>&quot;Neolithic man--no date.&quot;</p>
+<p>&quot;What did he do?&quot;</p>
+<p>&quot;He grazed his cattle on these slopes, and he learned to dig for
+tin when the bronze sword began to supersede the stone axe. Look
+at the great trench in the opposite hill. That is his mark. Yes,
+you will find some very singular points about the moor, Dr.
+Watson. Oh, excuse me an instant! It is surely Cyclopides.&quot;</p>
+<p>A small fly or moth had fluttered across our path, and in an
+instant Stapleton was rushing with extraordinary energy and speed
+in pursuit of it. To my dismay the creature flew straight for the
+great mire, and my acquaintance never paused for an instant,
+bounding from tuft to tuft behind it, his green net waving in the
+air. His gray clothes and jerky, zigzag, irregular progress made
+him not unlike some huge moth himself. I was standing watching
+his pursuit with a mixture of admiration for his extraordinary
+activity and fear lest he should lose his footing in the
+treacherous mire, when I heard the sound of steps, and turning
+round found a woman near me upon the path. She had come from the
+direction in which the plume of smoke indicated the position of
+Merripit House, but the dip of the moor had hid her until she was
+quite close.</p>
+<p>I could not doubt that this was the Miss Stapleton of whom I had
+been told, since ladies of any sort must be few upon the moor,
+and I remembered that I had heard someone describe her as being a
+beauty. The woman who approached me was certainly that, and of a
+most uncommon type. There could not have been a greater contrast
+between brother and sister, for Stapleton was neutral tinted,
+with light hair and gray eyes, while she was darker than any
+brunette whom I have seen in England--slim, elegant, and tall.
+She had a proud, finely cut face, so regular that it might have
+seemed impassive were it not for the sensitive mouth and the
+beautiful dark, eager eyes. With her perfect figure and elegant
+dress she was, indeed, a strange apparition upon a lonely
+moorland path. Her eyes were on her brother as I turned, and then
+she quickened her pace towards me. I had raised my hat and was
+about to make some explanatory remark, when her own words turned
+all my thoughts into a new channel.</p>
+<p>&quot;Go back!&quot; she said. &quot;Go straight back to London, instantly.&quot;</p>
+<p>I could only stare at her in stupid surprise. Her eyes blazed at
+me, and she tapped the ground impatiently with her foot.</p>
+<p>&quot;Why should I go back?&quot; I asked.</p>
+<p>&quot;I cannot explain.&quot; She spoke in a low, eager voice, with a
+curious lisp in her utterance. &quot;But for God's sake do what I ask
+you. Go back and never set foot upon the moor again.&quot;</p>
+<p>&quot;But I have only just come.&quot;</p>
+<p>&quot;Man, man!&quot; she cried. &quot;Can you not tell when a warning is for
+your own good? Go back to London! Start to-night! Get away from
+this place at all costs! Hush, my brother is coming! Not a word
+of what I have said. Would you mind getting that orchid for me
+among the mares-tails yonder? We are very rich in orchids on the
+moor, though, of course, you are rather late to see the beauties
+of the place.&quot;</p>
+<p>Stapleton had abandoned the chase and came back to us breathing
+hard and flushed with his exertions.</p>
+<p>&quot;Halloa, Beryl!&quot; said he, and it seemed to me that the tone of
+his greeting was not altogether a cordial one.</p>
+<p>&quot;Well, Jack, you are very hot.&quot;</p>
+<p>&quot;Yes, I was chasing a Cyclopides. He is very rare and seldom
+found in the late autumn. What a pity that I should have missed
+him!&quot; He spoke unconcernedly, but his small light eyes glanced
+incessantly from the girl to me.</p>
+<p>&quot;You have introduced yourselves, I can see.&quot;</p>
+<p>&quot;Yes. I was telling Sir Henry that it was rather late for him to
+see the true beauties of the moor.&quot;</p>
+<p>&quot;Why, who do you think this is?&quot;</p>
+<p>&quot;I imagine that it must be Sir Henry Baskerville.&quot;</p>
+<p>&quot;No, no,&quot; said I. &quot;Only a humble commoner, but his friend. My
+name is Dr. Watson.&quot;</p>
+<p>A flush of vexation passed over her expressive face. &quot;We have
+been talking at cross purposes,&quot; said she.</p>
+<p>&quot;Why, you had not very much time for talk,&quot; her brother remarked
+with the same questioning eyes.</p>
+<p>&quot;I talked as if Dr. Watson were a resident instead of being
+merely a visitor,&quot; said she. &quot;It cannot much matter to him
+whether it is early or late for the orchids. But you will come
+on, will you not, and see Merripit House?&quot;</p>
+<p>A short walk brought us to it, a bleak moorland house, once the
+farm of some grazier in the old prosperous days, but now put into
+repair and turned into a modern dwelling. An orchard surrounded
+it, but the trees, as is usual upon the moor, were stunted and
+nipped, and the effect of the whole place was mean and
+melancholy. We were admitted by a strange, wizened, rusty-coated
+old manservant, who seemed in keeping with the house. Inside,
+however, there were large rooms furnished with an elegance in
+which I seemed to recognize the taste of the lady. As I looked
+from their windows at the interminable granite-flecked moor
+rolling unbroken to the farthest horizon I could not but marvel
+at what could have brought this highly educated man and this
+beautiful woman to live in such a place.</p>
+<p>&quot;Queer spot to choose, is it not?&quot; said he as if in answer to my
+thought. &quot;And yet we manage to make ourselves fairly happy, do we
+not, Beryl?&quot;</p>
+<p>&quot;Quite happy,&quot; said she, but there was no ring of conviction in
+her words.</p>
+<p>&quot;I had a school,&quot; said Stapleton. &quot;It was in the north country.
+The work to a man of my temperament was mechanical and
+uninteresting, but the privilege of living with youth, of helping
+to mould those young minds, and of impressing them with one's own
+character and ideals, was very dear to me. However, the fates
+were against us. A serious epidemic broke out in the school and
+three of the boys died. It never recovered from the blow, and
+much of my capital was irretrievably swallowed up. And yet, if it
+were not for the loss of the charming companionship of the boys,
+I could rejoice over my own misfortune, for, with my strong
+tastes for botany and zoology, I find an unlimited field of work
+here, and my sister is as devoted to Nature as I am. All this,
+Dr. Watson, has been brought upon your head by your expression as
+you surveyed the moor out of our window.&quot;</p>
+<p>&quot;It certainly did cross my mind that it might be a little
+dull--less for you, perhaps, than for your sister.&quot;</p>
+<p>&quot;No, no, I am never dull,&quot; said she, quickly.</p>
+<p>&quot;We have books, we have our studies, and we have interesting
+neighbours. Dr. Mortimer is a most learned man in his own line.
+Poor Sir Charles was also an admirable companion. We knew him
+well, and miss him more than I can tell. Do you think that I
+should intrude if I were to call this afternoon and make the
+acquaintance of Sir Henry?&quot;</p>
+<p>&quot;I am sure that he would be delighted.&quot;</p>
+<p>&quot;Then perhaps you would mention that I propose to do so. We may
+in our humble way do something to make things more easy for him
+until he becomes accustomed to his new surroundings. Will you
+come upstairs, Dr. Watson, and inspect my collection of
+Lepidoptera? I think it is the most complete one in the
+south-west of England. By the time that you have looked through
+them lunch will be almost ready.&quot;</p>
+<p>But I was eager to get back to my charge. The melancholy of the
+moor, the death of the unfortunate pony, the weird sound which
+had been associated with the grim legend of the Baskervilles, all
+these things tinged my thoughts with sadness. Then on the top of
+these more or less vague impressions there had come the definite
+and distinct warning of Miss Stapleton, delivered with such
+intense earnestness that I could not doubt that some grave and
+deep reason lay behind it. I resisted all pressure to stay for
+lunch, and I set off at once upon my return journey, taking the
+grass-grown path by which we had come.</p>
+<p>It seems, however, that there must have been some short cut for
+those who knew it, for before I had reached the road I was
+astounded to see Miss Stapleton sitting upon a rock by the side
+of the track. Her face was beautifully flushed with her
+exertions, and she held her hand to her side.</p>
+<p>&quot;I have run all the way in order to cut you off, Dr. Watson,&quot;
+said she. &quot;I had not even time to put on my hat. I must not stop,
+or my brother may miss me. I wanted to say to you how sorry I am
+about the stupid mistake I made in thinking that you were Sir
+Henry. Please forget the words I said, which have no application
+whatever to you.&quot;</p>
+<p>&quot;But I can't forget them, Miss Stapleton,&quot; said I. &quot;I am Sir
+Henry's friend, and his welfare is a very close concern of mine.
+Tell me why it was that you were so eager that Sir Henry should
+return to London.&quot;</p>
+<p>&quot;A woman's whim, Dr. Watson. When you know me better you will
+understand that I cannot always give reasons for what I say or
+do.&quot;</p>
+<p>&quot;No, no. I remember the thrill in your voice. I remember the look
+in your eyes. Please, please, be frank with me, Miss Stapleton,
+for ever since I have been here I have been conscious of shadows
+all round me. Life has become like that great Grimpen Mire, with
+little green patches everywhere into which one may sink and with
+no guide to point the track. Tell me then what it was that you
+meant, and I will promise to convey your warning to Sir Henry.&quot;</p>
+<p>An expression of irresolution passed for an instant over her
+face, but her eyes had hardened again when she answered me.</p>
+<p>&quot;You make too much of it, Dr. Watson,&quot; said she. &quot;My brother and
+I were very much shocked by the death of Sir Charles. We knew him
+very intimately, for his favourite walk was over the moor to our
+house. He was deeply impressed with the curse which hung over the
+family, and when this tragedy came I naturally felt that there
+must be some grounds for the fears which he had expressed. I was
+distressed therefore when another member of the family came down
+to live here, and I felt that he should be warned of the danger
+which he will run. That was all which I intended to convey.</p>
+<p>&quot;But what is the danger?&quot;</p>
+<p>&quot;You know the story of the hound?&quot;</p>
+<p>&quot;I do not believe in such nonsense.&quot;</p>
+<p>&quot;But I do. If you have any influence with Sir Henry, take him
+away from a place which has always been fatal to his family. The
+world is wide. Why should he wish to live at the place of
+danger?&quot;</p>
+<p>&quot;Because it is the place of danger. That is Sir Henry's nature. I
+fear that unless you can give me some more definite information
+than this it would be impossible to get him to move.&quot;</p>
+<p>&quot;I cannot say anything definite, for I do not know anything
+definite.&quot;</p>
+<p>&quot;I would ask you one more question, Miss Stapleton. If you meant
+no more than this when you first spoke to me, why should you not
+wish your brother to overhear what you said? There is nothing to
+which he, or anyone else, could object.&quot;</p>
+<p>&quot;My brother is very anxious to have the Hall inhabited, for he
+thinks it is for the good of the poor folk upon the moor. He
+would be very angry if he knew that I have said anything which
+might induce Sir Henry to go away. But I have done my duty now
+and I will say no more. I must get back, or he will miss me and
+suspect that I have seen you. Good-bye!&quot; She turned and had
+disappeared in a few minutes among the scattered boulders, while
+I, with my soul full of vague fears, pursued my way to
+Baskerville Hall.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="Baskerville_Hall.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="First_Report_of_Dr_Watson.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="Baskerville_Hall.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="First_Report_of_Dr_Watson.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        <script type="text/javascript" src="src/theme/theme-solarized_dark.js"></script>
+        <script type="text/javascript" src="src/theme/theme-solarized_light.js"></script>
+    </body>
+</html>

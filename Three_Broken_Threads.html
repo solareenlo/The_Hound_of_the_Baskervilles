@@ -1,0 +1,557 @@
+<!DOCTYPE HTML>
+<html lang="ja" class="sidebar-visible no-js light">
+    <head>
+        <link rel="preload" as="font" type="../font/woff2" href="fonts/noto-serif-jp-v15-japanese-200.woff2" crossorigin>
+        <link rel="preload" as="font" type="../font/woff2" href="fonts/noto-serif-jp-v15-japanese-300.woff2" crossorigin>
+        <link rel="preload" as="font" type="../font/woff2" href="fonts/noto-serif-jp-v15-japanese-500.woff2" crossorigin>
+        <link rel="preload" as="font" type="../font/woff2" href="fonts/noto-serif-jp-v15-japanese-600.woff2" crossorigin>
+        <link rel="preload" as="font" type="../font/woff2" href="fonts/noto-serif-jp-v15-japanese-700.woff2" crossorigin>
+        <link rel="preload" as="font" type="../font/woff2" href="fonts/noto-serif-jp-v15-japanese-900.woff2" crossorigin>
+        <link rel="preload" as="font" type="../font/woff2" href="fonts/noto-serif-jp-v15-japanese-regular.woff2" crossorigin>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Three Broken Threads - The Hound of the Baskervilles</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+        <link rel="stylesheet" href="fonts/font.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="src/theme/solarized-light-hljs.css">
+        <link rel="stylesheet" href="src/theme/solarized-dark-hljs.css">
+        <!-- MathJax -->
+        <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html">Home</a></li><li class="chapter-item expanded "><a href="Mr_Sherlock_Holmes.html"><strong aria-hidden="true">1.</strong> Mr. Sherlock Holmes</a></li><li class="chapter-item expanded "><a href="The_Curse_of_the_Baskervilles.html"><strong aria-hidden="true">2.</strong> The Curse of the Baskervilles</a></li><li class="chapter-item expanded "><a href="The_Problem.html"><strong aria-hidden="true">3.</strong> The Problem</a></li><li class="chapter-item expanded "><a href="Sir_Henry_Baskerville.html"><strong aria-hidden="true">4.</strong> Sir Henry Baskerville</a></li><li class="chapter-item expanded "><a href="Three_Broken_Threads.html" class="active"><strong aria-hidden="true">5.</strong> Three Broken Threads</a></li><li class="chapter-item expanded "><a href="Baskerville_Hall.html"><strong aria-hidden="true">6.</strong> Baskerville Hall</a></li><li class="chapter-item expanded "><a href="The_Stapletons_of_Merripit_House.html"><strong aria-hidden="true">7.</strong> The Stapletons of Merripit House</a></li><li class="chapter-item expanded "><a href="First_Report_of_Dr_Watson.html"><strong aria-hidden="true">8.</strong> First Report of Dr. Watson</a></li><li class="chapter-item expanded "><a href="The_Light_Upon_The_Moor.html"><strong aria-hidden="true">9.</strong> The Light Upon The Moor</a></li><li class="chapter-item expanded "><a href="Extract_from_the_Diary_of_Dr_Watson.html"><strong aria-hidden="true">10.</strong> Extract from the Diary of Dr. Watson</a></li><li class="chapter-item expanded "><a href="The_Man_on_the_Tor.html"><strong aria-hidden="true">11.</strong> The Man on the Tor</a></li><li class="chapter-item expanded "><a href="Death_on_the_Moor.html"><strong aria-hidden="true">12.</strong> Death on the Moor</a></li><li class="chapter-item expanded "><a href="Fixing_the_Nets.html"><strong aria-hidden="true">13.</strong> Fixing the Nets</a></li><li class="chapter-item expanded "><a href="The_Hound_of_the_Baskervilles.html"><strong aria-hidden="true">14.</strong> The Hound of the Baskervilles</a></li><li class="chapter-item expanded "><a href="A_Retrospection.html"><strong aria-hidden="true">15.</strong> A Retrospection</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="solarized-light">Solarized Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="solarized-dark">Solarized Dark</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">The Hound of the Baskervilles</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/solareenlo/The_Hound_of_the_Baskervilles" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/solareenlo/The_Hound_of_the_Baskervilles/edit/main/src/Three_Broken_Threads.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="5-three-broken-threads"><a class="header" href="#5-three-broken-threads">5. Three Broken Threads</a></h1>
+<p>Sherlock Holmes had, in a very remarkable degree, the power of
+detaching his mind at will. For two hours the strange business in
+which we had been involved appeared to be forgotten, and he was
+entirely absorbed in the pictures of the modern Belgian masters.
+He would talk of nothing but art, of which he had the crudest
+ideas, from our leaving the gallery until we found ourselves at
+the Northumberland Hotel.</p>
+<p>&quot;Sir Henry Baskerville is upstairs expecting you,&quot; said the
+clerk. &quot;He asked me to show you up at once when you came.&quot;</p>
+<p>&quot;Have you any objection to my looking at your register?&quot; said
+Holmes.</p>
+<p>&quot;Not in the least.&quot;</p>
+<p>The book showed that two names had been added after that of
+Baskerville. One was Theophilus Johnson and family, of Newcastle;
+the other Mrs. Oldmore and maid, of High Lodge, Alton.</p>
+<p>&quot;Surely that must be the same Johnson whom I used to know,&quot; said
+Holmes to the porter. &quot;A lawyer, is he not, gray-headed, and
+walks with a limp?&quot;</p>
+<p>&quot;No, sir; this is Mr. Johnson, the coal-owner, a very active
+gentleman, not older than yourself.&quot;</p>
+<p>&quot;Surely you are mistaken about his trade?&quot;</p>
+<p>&quot;No, sir! he has used this hotel for many years, and he is very
+well known to us.&quot;</p>
+<p>&quot;Ah, that settles it. Mrs. Oldmore, too; I seem to remember the
+name. Excuse my curiosity, but often in calling upon one friend
+one finds another.&quot;</p>
+<p>&quot;She is an invalid lady, sir. Her husband was once mayor of
+Gloucester. She always comes to us when she is in town.&quot;</p>
+<p>&quot;Thank you; I am afraid I cannot claim her acquaintance. We have
+established a most important fact by these questions, Watson,&quot; he
+continued in a low voice as we went upstairs together. &quot;We know
+now that the people who are so interested in our friend have not
+settled down in his own hotel. That means that while they are, as
+we have seen, very anxious to watch him, they are equally anxious
+that he should not see them. Now, this is a most suggestive
+fact.&quot;</p>
+<p>&quot;What does it suggest?&quot;</p>
+<p>&quot;It suggests--halloa, my dear fellow, what on earth is the
+matter?&quot;</p>
+<p>As we came round the top of the stairs we had run up against Sir
+Henry Baskerville himself. His face was flushed with anger, and
+he held an old and dusty boot in one of his hands. So furious was
+he that he was hardly articulate, and when he did speak it was in
+a much broader and more Western dialect than any which we had
+heard from him in the morning.</p>
+<p>&quot;Seems to me they are playing me for a sucker in this hotel,&quot; he
+cried. &quot;They'll find they've started in to monkey with the wrong
+man unless they are careful. By thunder, if that chap can't find
+my missing boot there will be trouble. I can take a joke with the
+best, Mr. Holmes, but they've got a bit over the mark this time.&quot;</p>
+<p>&quot;Still looking for your boot?&quot;</p>
+<p>&quot;Yes, sir, and mean to find it.&quot;</p>
+<p>&quot;But, surely, you said that it was a new brown boot?&quot;</p>
+<p>&quot;So it was, sir. And now it's an old black one.&quot;</p>
+<p>&quot;What! you don't mean to say----?&quot;</p>
+<p>&quot;That's just what I do mean to say. I only had three pairs in the
+world--the new brown, the old black, and the patent leathers,
+which I am wearing. Last night they took one of my brown ones,
+and to-day they have sneaked one of the black. Well, have you got
+it? Speak out, man, and don't stand staring!&quot;</p>
+<p>An agitated German waiter had appeared upon the scene.</p>
+<p>&quot;No, sir; I have made inquiry all over the hotel, but I can hear
+no word of it.&quot;</p>
+<p>&quot;Well, either that boot comes back before sundown or I'll see the
+manager and tell him that I go right straight out of this hotel.&quot;</p>
+<p>&quot;It shall be found, sir--I promise you that if you will have a
+little patience it will be found.&quot;</p>
+<p>&quot;Mind it is, for it's the last thing of mine that I'll lose in
+this den of thieves. Well, well, Mr. Holmes, you'll excuse my
+troubling you about such a trifle----&quot;</p>
+<p>&quot;I think it's well worth troubling about.&quot;</p>
+<p>&quot;Why, you look very serious over it.&quot;</p>
+<p>&quot;How do you explain it?&quot;</p>
+<p>&quot;I just don't attempt to explain it. It seems the very maddest,
+queerest thing that ever happened to me.&quot;</p>
+<p>&quot;The queerest perhaps----&quot; said Holmes, thoughtfully.</p>
+<p>&quot;What do you make of it yourself?&quot;</p>
+<p>&quot;Well, I don't profess to understand it yet. This case of yours
+is very complex, Sir Henry. When taken in conjunction with your
+uncle's death I am not sure that of all the five hundred cases of
+capital importance which I have handled there is one which cuts
+so deep. But we hold several threads in our hands, and the odds
+are that one or other of them guides us to the truth. We may
+waste time in following the wrong one, but sooner or later we
+must come upon the right.&quot;</p>
+<p>We had a pleasant luncheon in which little was said of the
+business which had brought us together. It was in the private
+sitting-room to which we afterwards repaired that Holmes asked
+Baskerville what were his intentions.</p>
+<p>&quot;To go to Baskerville Hall.&quot;</p>
+<p>&quot;And when?&quot;</p>
+<p>&quot;At the end of the week.&quot;</p>
+<p>&quot;On the whole,&quot; said Holmes, &quot;I think that your decision is a
+wise one. I have ample evidence that you are being dogged in
+London, and amid the millions of this great city it is difficult
+to discover who these people are or what their object can be. If
+their intentions are evil they might do you a mischief, and we
+should be powerless to prevent it. You did not know, Dr. Mortimer,
+that you were followed this morning from my house?&quot;</p>
+<p>Dr. Mortimer started violently.</p>
+<p>&quot;Followed! By whom?&quot;</p>
+<p>&quot;That, unfortunately, is what I cannot tell you. Have you among
+your neighbours or acquaintances on Dartmoor any man with a
+black, full beard?&quot;</p>
+<p>&quot;No--or, let me see--why, yes. Barrymore, Sir Charles's butler,
+is a man with a full, black beard.&quot;</p>
+<p>&quot;Ha! Where is Barrymore?&quot;</p>
+<p>&quot;He is in charge of the Hall.&quot;</p>
+<p>&quot;We had best ascertain if he is really there, or if by any
+possibility he might be in London.&quot;</p>
+<p>&quot;How can you do that?&quot;</p>
+<p>&quot;Give me a telegraph form. 'Is all ready for Sir Henry?' That
+will do. Address to Mr. Barrymore, Baskerville Hall. What is the
+nearest telegraph-office? Grimpen. Very good, we will send a
+second wire to the postmaster, Grimpen: 'Telegram to Mr.
+Barrymore to be delivered into his own hand. If absent, please
+return wire to Sir Henry Baskerville, Northumberland Hotel.' That
+should let us know before evening whether Barrymore is at his
+post in Devonshire or not.&quot;</p>
+<p>&quot;That's so,&quot; said Baskerville. &quot;By the way, Dr. Mortimer, who is
+this Barrymore, anyhow?&quot;</p>
+<p>&quot;He is the son of the old caretaker, who is dead. They have
+looked after the Hall for four generations now. So far as I know,
+he and his wife are as respectable a couple as any in the
+county.&quot;</p>
+<p>&quot;At the same time,&quot; said Baskerville, &quot;it's clear enough that so
+long as there are none of the family at the Hall these people
+have a mighty fine home and nothing to do.&quot;</p>
+<p>&quot;That is true.&quot;</p>
+<p>&quot;Did Barrymore profit at all by Sir Charles's will?&quot; asked
+Holmes.</p>
+<p>&quot;He and his wife had five hundred pounds each.&quot;</p>
+<p>&quot;Ha! Did they know that they would receive this?&quot;</p>
+<p>&quot;Yes; Sir Charles was very fond of talking about the provisions
+of his will.&quot;</p>
+<p>&quot;That is very interesting.&quot;</p>
+<p>&quot;I hope,&quot; said Dr. Mortimer, &quot;that you do not look with
+suspicious eyes upon everyone who received a legacy from Sir
+Charles, for I also had a thousand pounds left to me.&quot;</p>
+<p>&quot;Indeed! And anyone else?&quot;</p>
+<p>&quot;There were many insignificant sums to individuals, and a large
+number of public charities. The residue all went to Sir Henry.&quot;</p>
+<p>&quot;And how much was the residue?&quot;</p>
+<p>&quot;Seven hundred and forty thousand pounds.&quot;</p>
+<p>Holmes raised his eyebrows in surprise. &quot;I had no idea that so
+gigantic a sum was involved,&quot; said he.</p>
+<p>&quot;Sir Charles had the reputation of being rich, but we did not
+know how very rich he was until we came to examine his
+securities. The total value of the estate was close on to a
+million.&quot;</p>
+<p>&quot;Dear me! It is a stake for which a man might well play a
+desperate game. And one more question, Dr. Mortimer. Supposing
+that anything happened to our young friend here--you will forgive
+the unpleasant hypothesis!--who would inherit the estate?&quot;</p>
+<p>&quot;Since Rodger Baskerville, Sir Charles's younger brother died
+unmarried, the estate would descend to the Desmonds, who are
+distant cousins. James Desmond is an elderly clergyman in
+Westmoreland.&quot;</p>
+<p>&quot;Thank you. These details are all of great interest. Have you met
+Mr. James Desmond?&quot;</p>
+<p>&quot;Yes; he once came down to visit Sir Charles. He is a man of
+venerable appearance and of saintly life. I remember that he
+refused to accept any settlement from Sir Charles, though he
+pressed it upon him.&quot;</p>
+<p>&quot;And this man of simple tastes would be the heir to Sir Charles's
+thousands.&quot;</p>
+<p>&quot;He would be the heir to the estate because that is entailed. He
+would also be the heir to the money unless it were willed
+otherwise by the present owner, who can, of course, do what he
+likes with it.&quot;</p>
+<p>&quot;And have you made your will, Sir Henry?&quot;</p>
+<p>&quot;No, Mr. Holmes, I have not. I've had no time, for it was only
+yesterday that I learned how matters stood. But in any case I
+feel that the money should go with the title and estate. That was
+my poor uncle's idea. How is the owner going to restore the
+glories of the Baskervilles if he has not money enough to keep up
+the property? House, land, and dollars must go together.&quot;</p>
+<p>&quot;Quite so. Well, Sir Henry, I am of one mind with you as to the
+advisability of your going down to Devonshire without delay.
+There is only one provision which I must make. You certainly must
+not go alone.&quot;</p>
+<p>&quot;Dr. Mortimer returns with me.&quot;</p>
+<p>&quot;But Dr. Mortimer has his practice to attend to, and his house is
+miles away from yours. With all the good will in the world he may
+be unable to help you. No, Sir Henry, you must take with you
+someone, a trusty man, who will be always by your side.&quot;</p>
+<p>&quot;Is it possible that you could come yourself, Mr. Holmes?&quot;</p>
+<p>&quot;If matters came to a crisis I should endeavour to be present in
+person; but you can understand that, with my extensive consulting
+practice and with the constant appeals which reach me from many
+quarters, it is impossible for me to be absent from London for an
+indefinite time. At the present instant one of the most revered
+names in England is being besmirched by a blackmailer, and only I
+can stop a disastrous scandal. You will see how impossible it is
+for me to go to Dartmoor.&quot;</p>
+<p>&quot;Whom would you recommend, then?&quot;</p>
+<p>Holmes laid his hand upon my arm.</p>
+<p>&quot;If my friend would undertake it there is no man who is better
+worth having at your side when you are in a tight place. No one
+can say so more confidently than I.&quot;</p>
+<p>The proposition took me completely by surprise, but before I had
+time to answer, Baskerville seized me by the hand and wrung it
+heartily.</p>
+<p>&quot;Well, now, that is real kind of you, Dr. Watson,&quot; said he. &quot;You
+see how it is with me, and you know just as much about the matter
+as I do. If you will come down to Baskerville Hall and see me
+through I'll never forget it.&quot;</p>
+<p>The promise of adventure had always a fascination for me, and I
+was complimented by the words of Holmes and by the eagerness with
+which the baronet hailed me as a companion.</p>
+<p>&quot;I will come, with pleasure,&quot; said I. &quot;I do not know how I could
+employ my time better.&quot;</p>
+<p>&quot;And you will report very carefully to me,&quot; said Holmes. &quot;When a
+crisis comes, as it will do, I will direct how you shall act. I
+suppose that by Saturday all might be ready?&quot;</p>
+<p>&quot;Would that suit Dr. Watson?&quot;</p>
+<p>&quot;Perfectly.&quot;</p>
+<p>&quot;Then on Saturday, unless you hear to the contrary, we shall meet
+at the 10:30 train from Paddington.&quot;</p>
+<p>We had risen to depart when Baskerville gave a cry, of triumph,
+and diving into one of the corners of the room he drew a brown
+boot from under a cabinet.</p>
+<p>&quot;My missing boot!&quot; he cried.</p>
+<p>&quot;May all our difficulties vanish as easily!&quot; said Sherlock
+Holmes.</p>
+<p>&quot;But it is a very singular thing,&quot; Dr. Mortimer remarked. &quot;I
+searched this room carefully before lunch.&quot;</p>
+<p>&quot;And so did I,&quot; said Baskerville. &quot;Every inch of it.&quot;</p>
+<p>&quot;There was certainly no boot in it then.&quot;</p>
+<p>&quot;In that case the waiter must have placed it there while we were
+lunching.&quot;</p>
+<p>The German was sent for but professed to know nothing of the
+matter, nor could any inquiry clear it up. Another item had been
+added to that constant and apparently purposeless series of small
+mysteries which had succeeded each other so rapidly. Setting
+aside the whole grim story of Sir Charles's death, we had a line
+of inexplicable incidents all within the limits of two days,
+which included the receipt of the printed letter, the
+black-bearded spy in the hansom, the loss of the new brown boot,
+the loss of the old black boot, and now the return of the new
+brown boot. Holmes sat in silence in the cab as we drove back to
+Baker Street, and I knew from his drawn brows and keen face that
+his mind, like my own, was busy in endeavouring to frame some
+scheme into which all these strange and apparently disconnected
+episodes could be fitted. All afternoon and late into the evening
+he sat lost in tobacco and thought.</p>
+<p>Just before dinner two telegrams were handed in. The first ran:--</p>
+<p>&quot;Have just heard that Barrymore is at the Hall.--BASKERVILLE.&quot;
+The second:--</p>
+<p>&quot;Visited twenty-three hotels as directed, but sorry, to report
+unable to trace cut sheet of Times.--CARTWRIGHT.&quot;</p>
+<p>&quot;There go two of my threads, Watson. There is nothing more
+stimulating than a case where everything goes against you. We
+must cast round for another scent.&quot;</p>
+<p>&quot;We have still the cabman who drove the spy.&quot;</p>
+<p>&quot;Exactly. I have wired to get his name and address from the
+Official Registry. I should not be surprised if this were an
+answer to my question.&quot;</p>
+<p>The ring at the bell proved to be something even more
+satisfactory than an answer, however, for the door opened and a
+rough-looking fellow entered who was evidently the man himself.</p>
+<p>&quot;I got a message from the head office that a gent at this address
+had been inquiring for 2704,&quot; said he. &quot;I've driven my cab this
+seven years and never a word of complaint. I came here straight
+from the Yard to ask you to your face what you had against me.&quot;</p>
+<p>&quot;I have nothing in the world against you, my good man,&quot; said
+Holmes. &quot;On the contrary, I have half a sovereign for you if you
+will give me a clear answer to my questions.&quot;</p>
+<p>&quot;Well, I've had a good day and no mistake,&quot; said the cabman, with
+a grin. &quot;What was it you wanted to ask, sir?&quot;</p>
+<p>&quot;First of all your name and address, in case I want you again.&quot;</p>
+<p>&quot;John Clayton, 3 Turpey Street, the Borough. My cab is out of
+Shipley's Yard, near Waterloo Station.&quot;</p>
+<p>Sherlock Holmes made a note of it.</p>
+<p>&quot;Now, Clayton, tell me all about the fare who came and watched
+this house at ten o'clock this morning and afterwards followed
+the two gentlemen down Regent Street.&quot;</p>
+<p>The man looked surprised and a little embarrassed. &quot;Why, there's
+no good my telling you things, for you seem to know as much as I
+do already,&quot; said he. &quot;The truth is that the gentleman told me
+that he was a detective and that I was to say nothing about him
+to anyone.&quot;</p>
+<p>&quot;My good fellow, this is a very serious business, and you may
+find yourself in a pretty bad position if you try to hide
+anything from me. You say that your fare told you that he was a
+detective?&quot;</p>
+<p>&quot;Yes, he did.&quot;</p>
+<p>&quot;When did he say this?&quot;</p>
+<p>&quot;When he left me.&quot;</p>
+<p>&quot;Did he say anything more?&quot;</p>
+<p>&quot;He mentioned his name.&quot;</p>
+<p>Holmes cast a swift glance of triumph at me. &quot;Oh, he mentioned
+his name, did he? That was imprudent. What was the name that he
+mentioned?&quot;</p>
+<p>&quot;His name,&quot; said the cabman, &quot;was Mr. Sherlock Holmes.&quot;</p>
+<p>Never have I seen my friend more completely taken aback than by
+the cabman's reply. For an instant he sat in silent amazement.
+Then he burst into a hearty laugh.</p>
+<p>&quot;A touch, Watson--an undeniable touch!&quot; said he. &quot;I feel a foil
+as quick and supple as my own. He got home upon me very prettily
+that time. So his name was Sherlock Holmes, was it?&quot;</p>
+<p>&quot;Yes, sir, that was the gentleman's name.&quot;</p>
+<p>&quot;Excellent! Tell me where you picked him up and all that
+occurred.&quot;</p>
+<p>&quot;He hailed me at half-past nine in Trafalgar Square. He said that
+he was a detective, and he offered me two guineas if I would do
+exactly what he wanted all day and ask no questions. I was glad
+enough to agree. First we drove down to the Northumberland Hotel
+and waited there until two gentlemen came out and took a cab from
+the rank. We followed their cab until it pulled up somewhere near
+here.&quot;</p>
+<p>&quot;This very door,&quot; said Holmes.</p>
+<p>&quot;Well, I couldn't be sure of that, but I dare say my fare knew
+all about it. We pulled up half-way down the street and waited an
+hour and a half. Then the two gentlemen passed us, walking, and
+we followed down Baker Street and along ----&quot;</p>
+<p>&quot;I know,&quot; said Holmes.</p>
+<p>&quot;Until we got three-quarters down Regent Street. Then my
+gentleman threw up the trap, and he cried that I should drive
+right away to Waterloo Station as hard as I could go. I whipped
+up the mare and we were there under the ten minutes. Then he paid
+up his two guineas, like a good one, and away he went into the
+station. Only just as he was leaving he turned round and he said:
+'It might interest you to know that you have been driving Mr.
+Sherlock Holmes.' That's how I come to know the name.&quot;</p>
+<p>&quot;I see. And you saw no more of him?&quot;</p>
+<p>&quot;Not after he went into the station.&quot;</p>
+<p>&quot;And how would you describe Mr. Sherlock Holmes?&quot;</p>
+<p>The cabman scratched his head. &quot;Well, he wasn't altogether such
+an easy gentleman to describe. I'd put him at forty years of age,
+and he was of a middle height, two or three inches shorter than
+you, sir. He was dressed like a toff, and he had a black beard,
+cut square at the end, and a pale face. I don't know as I could
+say more than that.&quot;</p>
+<p>&quot;Colour of his eyes?&quot;</p>
+<p>&quot;No, I can't say that.&quot;</p>
+<p>&quot;Nothing more that you can remember?&quot;</p>
+<p>&quot;No, sir; nothing.&quot;</p>
+<p>&quot;Well, then, here is your half-sovereign. There's another one
+waiting for you if you can bring any more information. Good
+night!&quot;</p>
+<p>&quot;Good night, sir, and thank you!&quot;</p>
+<p>John Clayton departed chuckling, and Holmes turned to me with a
+shrug of his shoulders and a rueful smile.</p>
+<p>&quot;Snap goes our third thread, and we end where we began,&quot; said he.
+&quot;The cunning rascal! He knew our number, knew that Sir Henry
+Baskerville had consulted me, spotted who I was in Regent Street,
+conjectured that I had got the number of the cab and would lay my
+hands on the driver, and so sent back this audacious message. I
+tell you, Watson, this time we have got a foeman who is worthy of
+our steel. I've been checkmated in London. I can only wish you
+better luck in Devonshire. But I'm not easy in my mind about it.&quot;</p>
+<p>&quot;About what?&quot;</p>
+<p>&quot;About sending you. It's an ugly business, Watson, an ugly
+dangerous business, and the more I see of it the less I like it.
+Yes, my dear fellow, you may laugh, but I give you my word that I
+shall be very glad to have you back safe and sound in Baker
+Street once more.&quot;</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="Sir_Henry_Baskerville.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="Baskerville_Hall.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="Sir_Henry_Baskerville.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="Baskerville_Hall.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        <script type="text/javascript" src="src/theme/theme-solarized_dark.js"></script>
+        <script type="text/javascript" src="src/theme/theme-solarized_light.js"></script>
+    </body>
+</html>

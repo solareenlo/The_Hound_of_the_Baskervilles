@@ -1,0 +1,603 @@
+<!DOCTYPE HTML>
+<html lang="ja" class="sidebar-visible no-js light">
+    <head>
+        <link rel="preload" as="font" type="../font/woff2" href="fonts/noto-serif-jp-v15-japanese-200.woff2" crossorigin>
+        <link rel="preload" as="font" type="../font/woff2" href="fonts/noto-serif-jp-v15-japanese-300.woff2" crossorigin>
+        <link rel="preload" as="font" type="../font/woff2" href="fonts/noto-serif-jp-v15-japanese-500.woff2" crossorigin>
+        <link rel="preload" as="font" type="../font/woff2" href="fonts/noto-serif-jp-v15-japanese-600.woff2" crossorigin>
+        <link rel="preload" as="font" type="../font/woff2" href="fonts/noto-serif-jp-v15-japanese-700.woff2" crossorigin>
+        <link rel="preload" as="font" type="../font/woff2" href="fonts/noto-serif-jp-v15-japanese-900.woff2" crossorigin>
+        <link rel="preload" as="font" type="../font/woff2" href="fonts/noto-serif-jp-v15-japanese-regular.woff2" crossorigin>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Fixing the Nets - The Hound of the Baskervilles</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+        <link rel="stylesheet" href="fonts/font.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="src/theme/solarized-light-hljs.css">
+        <link rel="stylesheet" href="src/theme/solarized-dark-hljs.css">
+        <!-- MathJax -->
+        <script async type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html">Home</a></li><li class="chapter-item expanded "><a href="Mr_Sherlock_Holmes.html"><strong aria-hidden="true">1.</strong> Mr. Sherlock Holmes</a></li><li class="chapter-item expanded "><a href="The_Curse_of_the_Baskervilles.html"><strong aria-hidden="true">2.</strong> The Curse of the Baskervilles</a></li><li class="chapter-item expanded "><a href="The_Problem.html"><strong aria-hidden="true">3.</strong> The Problem</a></li><li class="chapter-item expanded "><a href="Sir_Henry_Baskerville.html"><strong aria-hidden="true">4.</strong> Sir Henry Baskerville</a></li><li class="chapter-item expanded "><a href="Three_Broken_Threads.html"><strong aria-hidden="true">5.</strong> Three Broken Threads</a></li><li class="chapter-item expanded "><a href="Baskerville_Hall.html"><strong aria-hidden="true">6.</strong> Baskerville Hall</a></li><li class="chapter-item expanded "><a href="The_Stapletons_of_Merripit_House.html"><strong aria-hidden="true">7.</strong> The Stapletons of Merripit House</a></li><li class="chapter-item expanded "><a href="First_Report_of_Dr_Watson.html"><strong aria-hidden="true">8.</strong> First Report of Dr. Watson</a></li><li class="chapter-item expanded "><a href="The_Light_Upon_The_Moor.html"><strong aria-hidden="true">9.</strong> The Light Upon The Moor</a></li><li class="chapter-item expanded "><a href="Extract_from_the_Diary_of_Dr_Watson.html"><strong aria-hidden="true">10.</strong> Extract from the Diary of Dr. Watson</a></li><li class="chapter-item expanded "><a href="The_Man_on_the_Tor.html"><strong aria-hidden="true">11.</strong> The Man on the Tor</a></li><li class="chapter-item expanded "><a href="Death_on_the_Moor.html"><strong aria-hidden="true">12.</strong> Death on the Moor</a></li><li class="chapter-item expanded "><a href="Fixing_the_Nets.html" class="active"><strong aria-hidden="true">13.</strong> Fixing the Nets</a></li><li class="chapter-item expanded "><a href="The_Hound_of_the_Baskervilles.html"><strong aria-hidden="true">14.</strong> The Hound of the Baskervilles</a></li><li class="chapter-item expanded "><a href="A_Retrospection.html"><strong aria-hidden="true">15.</strong> A Retrospection</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="solarized-light">Solarized Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="solarized-dark">Solarized Dark</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">The Hound of the Baskervilles</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/solareenlo/The_Hound_of_the_Baskervilles" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/solareenlo/The_Hound_of_the_Baskervilles/edit/main/src/Fixing_the_Nets.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="13-fixing-the-nets"><a class="header" href="#13-fixing-the-nets">13. Fixing the Nets</a></h1>
+<p>&quot;We're at close grips at last,&quot; said Holmes as we walked together
+across the moor. &quot;What a nerve the fellow has! How he pulled
+himself together in the face of what must have been a paralyzing
+shock when he found that the wrong man had fallen a victim to his
+plot. I told you in London, Watson, and I tell you now again,
+that we have never had a foeman more worthy of our steel.&quot;</p>
+<p>&quot;I am sorry that he has seen you.&quot;</p>
+<p>&quot;And so was I at first. But there was no getting out of it.&quot;</p>
+<p>&quot;What effect do you think it will have upon his plans now that he
+knows you are here?&quot;</p>
+<p>&quot;It may cause him to be more cautious, or it may drive him to
+desperate measures at once. Like most clever criminals, he may be
+too confident in his own cleverness and imagine that he has
+completely deceived us.&quot;</p>
+<p>&quot;Why should we not arrest him at once?&quot;</p>
+<p>&quot;My dear Watson, you were born to be a man of action. Your
+instinct is always to do something energetic. But supposing, for
+argument's sake, that we had him arrested to-night, what on earth
+the better off should we be for that? We could prove nothing
+against him. There's the devilish cunning of it! If he were
+acting through a human agent we could get some evidence, but if
+we were to drag this great dog to the light of day it would not
+help us in putting a rope round the neck of its master.&quot;</p>
+<p>&quot;Surely we have a case.&quot;</p>
+<p>&quot;Not a shadow of one--only surmise and conjecture. We should be
+laughed out of court if we came with such a story and such
+evidence.&quot;</p>
+<p>&quot;There is Sir Charles's death.&quot;</p>
+<p>&quot;Found dead without a mark upon him. You and I know that he died
+of sheer fright, and we know also what frightened him; but how
+are we to get twelve stolid jurymen to know it? What signs are
+there of a hound? Where are the marks of its fangs? Of course we
+know that a hound does not bite a dead body and that Sir Charles
+was dead before ever the brute overtook him. But we have to prove
+all this, and we are not in a position to do it.&quot;</p>
+<p>&quot;Well, then, to-night?&quot;</p>
+<p>&quot;We are not much better off to-night. Again, there was no direct
+connection between the hound and the man's death. We never saw
+the hound. We heard it; but we could not prove that it was
+running upon this man's trail. There is a complete absence of
+motive. No, my dear fellow; we must reconcile ourselves to the
+fact that we have no case at present, and that it is worth our
+while to run any risk in order to establish one.&quot;</p>
+<p>&quot;And how do you propose to do so?&quot;</p>
+<p>&quot;I have great hopes of what Mrs. Laura Lyons may do for us when
+the position of affairs is made clear to her. And I have my own
+plan as well. Sufficient for to-morrow is the evil thereof; but I
+hope before the day is past to have the upper hand at last.&quot;</p>
+<p>I could draw nothing further from him, and he walked, lost in
+thought, as far as the Baskerville gates.</p>
+<p>&quot;Are you coming up?&quot;</p>
+<p>&quot;Yes; I see no reason for further concealment. But one last word,
+Watson. Say nothing of the hound to Sir Henry. Let him think that
+Selden's death was as Stapleton would have us believe. He will
+have a better nerve for the ordeal which he will have to undergo
+to-morrow, when he is engaged, if I remember your report aright,
+to dine with these people.&quot;</p>
+<p>&quot;And so am I.&quot;</p>
+<p>&quot;Then you must excuse yourself and he must go alone. That will be
+easily arranged. And now, if we are too late for dinner, I think
+that we are both ready for our suppers.&quot;</p>
+<p>Sir Henry was more pleased than surprised to see Sherlock Holmes,
+for he had for some days been expecting that recent events would
+bring him down from London. He did raise his eyebrows, however,
+when he found that my friend had neither any luggage nor any
+explanations for its absence. Between us we soon supplied his
+wants, and then over a belated supper we explained to the baronet
+as much of our experience as it seemed desirable that he should
+know. But first I had the unpleasant duty of breaking the news to
+Barrymore and his wife. To him it may have been an unmitigated
+relief, but she wept bitterly in her apron. To all the world he
+was the man of violence, half animal and half demon; but to her
+he always remained the little wilful boy of her own girlhood, the
+child who had clung to her hand. Evil indeed is the man who has
+not one woman to mourn him.</p>
+<p>&quot;I've been moping in the house all day since Watson went off in
+the morning,&quot; said the baronet. &quot;I guess I should have some
+credit, for I have kept my promise. If I hadn't sworn not to go
+about alone I might have had a more lively evening, for I had a
+message from Stapleton asking me over there.&quot;</p>
+<p>&quot;I have no doubt that you would have had a more lively evening,&quot;
+said Holmes drily. &quot;By the way, I don't suppose you appreciate
+that we have been mourning over you as having broken your neck?&quot;</p>
+<p>Sir Henry opened his eyes. &quot;How was that?&quot;</p>
+<p>&quot;This poor wretch was dressed in your clothes. I fear your
+servant who gave them to him may get into trouble with the
+police.&quot;</p>
+<p>&quot;That is unlikely. There was no mark on any of them, as far as I
+know.&quot;</p>
+<p>&quot;That's lucky for him--in fact, it's lucky for all of you, since
+you are all on the wrong side of the law in this matter. I am not
+sure that as a conscientious detective my first duty is not to
+arrest the whole household. Watson's reports are most
+incriminating documents.&quot;</p>
+<p>&quot;But how about the case?&quot; asked the baronet. &quot;Have you made
+anything out of the tangle? I don't know that Watson and I are
+much the wiser since we came down.&quot;</p>
+<p>&quot;I think that I shall be in a position to make the situation
+rather more clear to you before long. It has been an exceedingly
+difficult and most complicated business. There are several points
+upon which we still want light--but it is coming all the same.&quot;</p>
+<p>&quot;We've had one experience, as Watson has no doubt told you. We
+heard the hound on the moor, so I can swear that it is not all
+empty superstition. I had something to do with dogs when I was
+out West, and I know one when I hear one. If you can muzzle that
+one and put him on a chain I'll be ready to swear you are the
+greatest detective of all time.&quot;</p>
+<p>&quot;I think I will muzzle him and chain him all right if you will
+give me your help.&quot;</p>
+<p>&quot;Whatever you tell me to do I will do.&quot;</p>
+<p>&quot;Very good; and I will ask you also to do it blindly, without
+always asking the reason.&quot;</p>
+<p>&quot;Just as you like.&quot;</p>
+<p>&quot;If you will do this I think the chances are that our little
+problem will soon be solved. I have no doubt----&quot;</p>
+<p>He stopped suddenly and stared fixedly up over my head into the
+air. The lamp beat upon his face, and so intent was it and so
+still that it might have been that of a clear-cut classical
+statue, a personification of alertness and expectation.</p>
+<p>&quot;What is it?&quot; we both cried.</p>
+<p>I could see as he looked down that he was repressing some
+internal emotion. His features were still composed, but his eyes
+shone with amused exultation.</p>
+<p>&quot;Excuse the admiration of a connoisseur,&quot; said he as he waved his
+hand towards the line of portraits which covered the opposite
+wall. &quot;Watson won't allow that I know anything of art, but that
+is mere jealousy, because our views upon the subject differ. Now,
+these are a really very fine series of portraits.&quot;</p>
+<p>&quot;Well, I'm glad to hear you say so,&quot; said Sir Henry, glancing
+with some surprise at my friend. &quot;I don't pretend to know much
+about these things, and I'd be a better judge of a horse or a
+steer than of a picture. I didn't know that you found time for
+such things.&quot;</p>
+<p>&quot;I know what is good when I see it, and I see it now. That's a
+Kneller, I'll swear, that lady in the blue silk over yonder, and
+the stout gentleman with the wig ought to be a Reynolds. They are
+all family portraits, I presume?&quot;</p>
+<p>&quot;Every one.&quot;</p>
+<p>&quot;Do you know the names?&quot;</p>
+<p>&quot;Barrymore has been coaching me in them, and I think I can say my
+lessons fairly well.&quot;</p>
+<p>&quot;Who is the gentleman with the telescope?&quot;</p>
+<p>&quot;That is Rear-Admiral Baskerville, who served under Rodney in the
+West Indies. The man with the blue coat and the roll of paper is
+Sir William Baskerville, who was Chairman of Committees of the
+House of Commons under Pitt.&quot;</p>
+<p>&quot;And this Cavalier opposite to me--the one with the black velvet
+and the lace?&quot;</p>
+<p>&quot;Ah, you have a right to know about him. That is the cause of all
+the mischief, the wicked Hugo, who started the Hound of the
+Baskervilles. We're not likely to forget him.&quot;</p>
+<p>I gazed with interest and some surprise upon the portrait.</p>
+<p>&quot;Dear me!&quot; said Holmes, &quot;he seems a quiet, meek-mannered man
+enough, but I dare say that there was a lurking devil in his
+eyes. I had pictured him as a more robust and ruffianly person.&quot;</p>
+<p>&quot;There's no doubt about the authenticity, for the name and the
+date, 1647, are on the back of the canvas.&quot;</p>
+<p>Holmes said little more, but the picture of the old roysterer
+seemed to have a fascination for him, and his eyes were
+continually fixed upon it during supper. It was not until later,
+when Sir Henry had gone to his room, that I was able to follow
+the trend of his thoughts. He led me back into the
+banqueting-hall, his bedroom candle in his hand, and he held it
+up against the time-stained portrait on the wall.</p>
+<p>&quot;Do you see anything there?&quot;</p>
+<p>I looked at the broad plumed hat, the curling love-locks, the
+white lace collar, and the straight, severe face which was framed
+between them. It was not a brutal countenance, but it was prim,
+hard, and stern, with a firm-set, thin-lipped mouth, and a coldly
+intolerant eye.</p>
+<p>&quot;Is it like anyone you know?&quot;</p>
+<p>&quot;There is something of Sir Henry about the jaw.&quot;</p>
+<p>&quot;Just a suggestion, perhaps. But wait an instant!&quot; He stood upon
+a chair, and, holding up the light in his left hand, he curved
+his right arm over the broad hat and round the long ringlets.</p>
+<p>&quot;Good heavens!&quot; I cried, in amazement.</p>
+<p>The face of Stapleton had sprung out of the canvas.</p>
+<p>&quot;Ha, you see it now. My eyes have been trained to examine faces
+and not their trimmings. It is the first quality of a criminal
+investigator that he should see through a disguise.&quot;</p>
+<p>&quot;But this is marvellous. It might be his portrait.&quot;</p>
+<p>&quot;Yes, it is an interesting instance of a throwback, which appears
+to be both physical and spiritual. A study of family portraits is
+enough to convert a man to the doctrine of reincarnation. The
+fellow is a Baskerville--that is evident.&quot;</p>
+<p>&quot;With designs upon the succession.&quot;</p>
+<p>&quot;Exactly. This chance of the picture has supplied us with one of
+our most obvious missing links. We have him, Watson, we have him,
+and I dare swear that before to-morrow night he will be
+fluttering in our net as helpless as one of his own butterflies.
+A pin, a cork, and a card, and we add him to the Baker Street
+collection!&quot; He burst into one of his rare fits of laughter as he
+turned away from the picture. I have not heard him laugh often,
+and it has always boded ill to somebody.</p>
+<p>I was up betimes in the morning, but Holmes was afoot earlier
+still, for I saw him as I dressed, coming up the drive.</p>
+<p>&quot;Yes, we should have a full day to-day,&quot; he remarked, and he
+rubbed his hands with the joy of action. &quot;The nets are all in
+place, and the drag is about to begin. We'll know before the day
+is out whether we have caught our big, lean-jawed pike, or
+whether he has got through the meshes.&quot;</p>
+<p>&quot;Have you been on the moor already?&quot;</p>
+<p>&quot;I have sent a report from Grimpen to Princetown as to the death
+of Selden. I think I can promise that none of you will be
+troubled in the matter. And I have also communicated with my
+faithful Cartwright, who would certainly have pined away at the
+door of my hut, as a dog does at his master's grave, if I had not
+set his mind at rest about my safety.&quot;</p>
+<p>&quot;What is the next move?&quot;</p>
+<p>&quot;To see Sir Henry. Ah, here he is!&quot;</p>
+<p>&quot;Good morning, Holmes,&quot; said the baronet. &quot;You look like a
+general who is planning a battle with his chief of the staff.&quot;</p>
+<p>&quot;That is the exact situation. Watson was asking for orders.&quot;</p>
+<p>&quot;And so do I.&quot;</p>
+<p>&quot;Very good. You are engaged, as I understand, to dine with our
+friends the Stapletons to-night.&quot;</p>
+<p>&quot;I hope that you will come also. They are very hospitable people,
+and I am sure that they would be very glad to see you.&quot;</p>
+<p>&quot;I fear that Watson and I must go to London.&quot;</p>
+<p>&quot;To London?&quot;</p>
+<p>&quot;Yes, I think that we should be more useful there at the present
+juncture.&quot;</p>
+<p>The baronet's face perceptibly lengthened.</p>
+<p>&quot;I hoped that you were going to see me through this business. The
+Hall and the moor are not very pleasant places when one is
+alone.&quot;</p>
+<p>&quot;My dear fellow, you must trust me implicitly and do exactly what
+I tell you. You can tell your friends that we should have been
+happy to have come with you, but that urgent business required us
+to be in town. We hope very soon to return to Devonshire. Will
+you remember to give them that message?&quot;</p>
+<p>&quot;If you insist upon it.&quot;</p>
+<p>&quot;There is no alternative, I assure you.&quot;</p>
+<p>I saw by the baronet's clouded brow that he was deeply hurt by
+what he regarded as our desertion.</p>
+<p>&quot;When do you desire to go?&quot; he asked coldly.</p>
+<p>&quot;Immediately after breakfast. We will drive in to Coombe Tracey,
+but Watson will leave his things as a pledge that he will come
+back to you. Watson, you will send a note to Stapleton to tell
+him that you regret that you cannot come.&quot;</p>
+<p>&quot;I have a good mind to go to London with you,&quot; said the baronet.
+&quot;Why should I stay here alone?&quot;</p>
+<p>&quot;Because it is your post of duty. Because you gave me your word
+that you would do as you were told, and I tell you to stay.&quot;</p>
+<p>&quot;All right, then, I'll stay.&quot;</p>
+<p>&quot;One more direction! I wish you to drive to Merripit House. Send
+back your trap, however, and let them know that you intend to
+walk home.&quot;</p>
+<p>&quot;To walk across the moor?&quot;</p>
+<p>&quot;Yes.&quot;</p>
+<p>&quot;But that is the very thing which you have so often cautioned me
+not to do.&quot;</p>
+<p>&quot;This time you may do it with safety. If I had not every
+confidence in your nerve and courage I would not suggest it, but
+it is essential that you should do it.&quot;</p>
+<p>&quot;Then I will do it.&quot;</p>
+<p>&quot;And as you value your life do not go across the moor in any
+direction save along the straight path which leads from Merripit
+House to the Grimpen Road, and is your natural way home.&quot;</p>
+<p>&quot;I will do just what you say.&quot;</p>
+<p>&quot;Very good. I should be glad to get away as soon after breakfast
+as possible, so as to reach London in the afternoon.&quot;</p>
+<p>I was much astounded by this programme, though I remembered that
+Holmes had said to Stapleton on the night before that his visit
+would terminate next day. It had not crossed my mind, however,
+that he would wish me to go with him, nor could I understand how
+we could both be absent at a moment which he himself declared to
+be critical. There was nothing for it, however, but implicit
+obedience; so we bade good-bye to our rueful friend, and a couple
+of hours afterwards we were at the station of Coombe Tracey and
+had dispatched the trap upon its return journey. A small boy was
+waiting upon the platform.</p>
+<p>&quot;Any orders, sir?&quot;</p>
+<p>&quot;You will take this train to town, Cartwright. The moment you
+arrive you will send a wire to Sir Henry Baskerville, in my name,
+to say that if he finds the pocket-book which I have dropped he
+is to send it by registered post to Baker Street.&quot;</p>
+<p>&quot;Yes, sir.&quot;</p>
+<p>&quot;And ask at the station office if there is a message for me.&quot;</p>
+<p>The boy returned with a telegram, which Holmes handed to me. It
+ran: &quot;Wire received. Coming down with unsigned warrant. Arrive
+five-forty.--LESTRADE.&quot;</p>
+<p>&quot;That is in answer to mine of this morning. He is the best of the
+professionals, I think, and we may need his assistance. Now,
+Watson, I think that we cannot employ our time better than by
+calling upon your acquaintance, Mrs. Laura Lyons.&quot;</p>
+<p>His plan of campaign was beginning to be evident. He would use
+the baronet in order to convince the Stapletons that we were
+really gone, while we should actually return at the instant when
+we were likely to be needed. That telegram from London, if
+mentioned by Sir Henry to the Stapletons, must remove the last
+suspicions from their minds. Already I seemed to see our nets
+drawing closer around that lean-jawed pike.</p>
+<p>Mrs. Laura Lyons was in her office, and Sherlock Holmes opened
+his interview with a frankness and directness which considerably
+amazed her.</p>
+<p>&quot;I am investigating the circumstances which attended the death of
+the late Sir Charles Baskerville,&quot; said he. &quot;My friend here, Dr.
+Watson, has informed me of what you have communicated, and also
+of what you have withheld in connection with that matter.&quot;</p>
+<p>&quot;What have I withheld?&quot; she asked defiantly.</p>
+<p>&quot;You have confessed that you asked Sir Charles to be at the gate
+at ten o'clock. We know that that was the place and hour of his
+death. You have withheld what the connection is between these
+events.&quot;</p>
+<p>&quot;There is no connection.&quot;</p>
+<p>&quot;In that case the coincidence must indeed be an extraordinary
+one. But I think that we shall succeed in establishing a
+connection after all. I wish to be perfectly frank with you, Mrs.
+Lyons. We regard this case as one of murder, and the evidence may
+implicate not only your friend Mr. Stapleton, but his wife as
+well.&quot;</p>
+<p>The lady sprang from her chair.</p>
+<p>&quot;His wife!&quot; she cried.</p>
+<p>&quot;The fact is no longer a secret. The person who has passed for
+his sister is really his wife.&quot;</p>
+<p>Mrs. Lyons had resumed her seat. Her hands were grasping the arms
+of her chair, and I saw that the pink nails had turned white with
+the pressure of her grip.</p>
+<p>&quot;His wife!&quot; she said again. &quot;His wife! He is not a married man.&quot;</p>
+<p>Sherlock Holmes shrugged his shoulders.</p>
+<p>&quot;Prove it to me! Prove it to me! And if you can do so --!&quot; The
+fierce flash of her eyes said more than any words.</p>
+<p>&quot;I have come prepared to do so,&quot; said Holmes, drawing several
+papers from his pocket. &quot;Here is a photograph of the couple taken
+in York four years ago. It is indorsed 'Mr. and Mrs. Vandeleur,'
+but you will have no difficulty in recognizing him, and her also,
+if you know her by sight. Here are three written descriptions by
+trustworthy witnesses of Mr. and Mrs. Vandeleur, who at that time
+kept St. Oliver's private school. Read them and see if you can
+doubt the identity of these people.&quot;</p>
+<p>She glanced at them, and then looked up at us with the set, rigid
+face of a desperate woman.</p>
+<p>&quot;Mr. Holmes,&quot; she said, &quot;this man had offered me marriage on
+condition that I could get a divorce from my husband. He has lied
+to me, the villain, in every conceivable way. Not one word of
+truth has he ever told me. And why--why? I imagined that all was
+for my own sake. But now I see that I was never anything but a
+tool in his hands. Why should I preserve faith with him who never
+kept any with me? Why should I try to shield him from the
+consequences of his own wicked acts? Ask me what you like, and
+there is nothing which I shall hold back. One thing I swear to
+you, and that is that when I wrote the letter I never dreamed of
+any harm to the old gentleman, who had been my kindest friend.&quot;</p>
+<p>&quot;I entirely believe you, madam,&quot; said Sherlock Holmes. &quot;The
+recital of these events must be very painful to you, and perhaps
+it will make it easier if I tell you what occurred, and you can
+check me if I make any material mistake. The sending of this
+letter was suggested to you by Stapleton?&quot;</p>
+<p>&quot;He dictated it.&quot;</p>
+<p>&quot;I presume that the reason he gave was that you would receive
+help from Sir Charles for the legal expenses connected with your
+divorce?&quot;</p>
+<p>&quot;Exactly.&quot;</p>
+<p>&quot;And then after you had sent the letter he dissuaded you from
+keeping the appointment?&quot;</p>
+<p>&quot;He told me that it would hurt his self-respect that any other
+man should find the money for such an object, and that though he
+was a poor man himself he would devote his last penny to removing
+the obstacles which divided us.&quot;</p>
+<p>&quot;He appears to be a very consistent character. And then you heard
+nothing until you read the reports of the death in the paper?&quot;</p>
+<p>&quot;No.&quot;</p>
+<p>&quot;And he made you swear to say nothing about your appointment with
+Sir Charles?&quot;</p>
+<p>&quot;He did. He said that the death was a very mysterious one, and
+that I should certainly be suspected if the facts came out. He
+frightened me into remaining silent.&quot;</p>
+<p>&quot;Quite so. But you had your suspicions?&quot;</p>
+<p>She hesitated and looked down.</p>
+<p>&quot;I knew him,&quot; she said. &quot;But if he had kept faith with me I
+should always have done so with him.&quot;</p>
+<p>&quot;I think that on the whole you have had a fortunate escape,&quot; said
+Sherlock Holmes. &quot;You have had him in your power and he knew it,
+and yet you are alive. You have been walking for some months very
+near to the edge of a precipice. We must wish you good-morning
+now, Mrs. Lyons, and it is probable that you will very shortly
+hear from us again.&quot;</p>
+<p>&quot;Our case becomes rounded off, and difficulty after difficulty
+thins away in front of us,&quot; said Holmes as we stood waiting for
+the arrival of the express from town. &quot;I shall soon be in the
+position of being able to put into a single connected narrative
+one of the most singular and sensational crimes of modern times.
+Students of criminology will remember the analogous incidents in
+Godno, in Little Russia, in the year '66, and of course there are
+the Anderson murders in North Carolina, but this case possesses
+some features which are entirely its own. Even now we have no
+clear case against this very wily man. But I shall be very much
+surprised if it is not clear enough before we go to bed this
+night.&quot;</p>
+<p>The London express came roaring into the station, and a small,
+wiry bulldog of a man had sprung from a first-class carriage. We
+all three shook hands, and I saw at once from the reverential way
+in which Lestrade gazed at my companion that he had learned a
+good deal since the days when they had first worked together. I
+could well remember the scorn which the theories of the reasoner
+used then to excite in the practical man.</p>
+<p>&quot;Anything good?&quot; he asked.</p>
+<p>&quot;The biggest thing for years,&quot; said Holmes. &quot;We have two hours
+before we need think of starting. I think we might employ it in
+getting some dinner and then, Lestrade, we will take the London
+fog out of your throat by giving you a breath of the pure night
+air of Dartmoor. Never been there? Ah, well, I don't suppose you
+will forget your first visit.&quot;</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="Death_on_the_Moor.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="The_Hound_of_the_Baskervilles.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="Death_on_the_Moor.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="The_Hound_of_the_Baskervilles.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        <script type="text/javascript" src="src/theme/theme-solarized_dark.js"></script>
+        <script type="text/javascript" src="src/theme/theme-solarized_light.js"></script>
+    </body>
+</html>
